@@ -1,9 +1,124 @@
-
 .logo{
     height:300px;
     width:300px;
 }
 
+.logo-nav{
+    height:110px;
+    width:110px;
+}
+
 .text-404{
     text-align: center;
+}
+
+.social-nav{
+    margin-left:2rem;
+}
+
+@media (max-width: 992px) {
+    .social-nav{
+        margin: 0 !important;
+    }
+}
+
+.social-nav-item{
+    display: inline;
+    padding: 0px !important;
+    margin-left: .5rem;
+    color: #705642 !important;
+}
+
+.icon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+.icon-instagram{
+    background-image: url(../assets/icons/instagram.svg);
+}
+
+.languages{
+    position:fixed;
+    bottom:1rem;
+    left:5%;
+    width:auto;
+}
+
+.navbar-toggler {
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #dbc87b;
+    border-radius: 19px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar {
+    margin-top: 0px;
+}
+
+/* when navigation is clicked */
+
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+/* State when the navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+    background: #705642;
 }
