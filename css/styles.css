@@ -19,7 +19,12 @@
 @media (max-width: 992px) {
     .social-nav{
         margin: 0 !important;
+        padding:1rem 0 1rem 0.6rem!important;
     }
+    .nav-link{
+        padding: 1rem 0 0 1rem !important;
+    }
+
 }
 
 .social-nav-item{
