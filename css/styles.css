@@ -205,6 +205,23 @@
     text-align: center;
 }
 
+.contact-icon {
+    height: 95px;
+    padding-top: 2rem;
+}
+
+.contact-text {
+    padding-top: 1.6rem;
+    font-size: 20px !important;
+    color:#705642;
+}
+
+.logo-footer{
+
+    height: 200px;
+    width: 200px;
+}
+
 .motto-div{
     padding-top: 3rem;
     text-align: center;
