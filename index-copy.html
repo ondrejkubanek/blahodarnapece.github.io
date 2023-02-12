@@ -67,20 +67,20 @@
 
     <section class="content-large header w-100 d-flex align-items-center">
         <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center text-header">
-                        <h1>Nadpis úvodní stránky</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Mauris
-                            dictum facilisis augue. Suspendisse nisl. Nulla non lectus sed nisl molestie malesuada. Cras
-                            elementum. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.</p>
-                        <a class="btn btn-secondary" href="http://">Text</a>
-                        <a class="btn btn-primary" href="http://">Rezervace</a>
-                    </div>
-                    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center text-header">
+                    <h1>Nadpis úvodní stránky</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Mauris
+                        dictum facilisis augue. Suspendisse nisl. Nulla non lectus sed nisl molestie malesuada. Cras
+                        elementum. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.</p>
+                    <a class="btn btn-secondary" href="http://">Text</a>
+                    <a class="btn btn-primary" href="http://">Rezervace</a>
                 </div>
-                
+
             </div>
+
+        </div>
 
     </section>
 
@@ -90,11 +90,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    foto
+                    <img src="./assets/img/stepanka.jpg" alt="Štěpánka Kee" class="img-thumbnail">
                 </div>
-                <div class="col-lg-7">
-                    <h1>Vítejte na stránkách Blahodárné péče</h1>
-                    <p>ráda bych se s Vámi podělila o vášeň pro ajurvédské a relaxační masáže. Otevření vlastního salonu
+                <div class="col-lg-7 pt-3">
+                    <h1>Vítejte na stránkách Blahodárné péče,</h1>
+                    <p class="pt-3">ráda bych se s Vámi podělila o vášeň pro ajurvédské a relaxační masáže. Otevření
+                        vlastního salonu
                         je pro mě splněním dlouholetého snu a cítím velkou vděčnost za to, že jsem na své životní cestě
                         potkala správné lidi, kteří mě k východním naukám a k masážím přivedli.</p>
                     <p>Můj první kontakt s těmito technikami se odehrál před deseti lety v Praze, kde jsem pod vedením
@@ -103,7 +104,7 @@
                         neustále čerpám. Sílu získanou z této zkušenosti předávám s radostí a pokorou dál
                         prostřednictvím svých masáží.</p>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7 pt-5">
                     <p>V masážní praxi přistupuji ke každému člověku celostně, protože věřím, že bolesti těla mohou být
                         často spojené s bolestmi duše a že je důležité se zabývat obojím, abychom dosáhli opravdového
                         uzdravení a uvolnění. Sama se stále učím, jsem na cestě vědomého seberozvoje.</p>
@@ -117,20 +118,30 @@
         </div>
     </section>
 
-
-
-    <section class="content-small">
+    <section class="linktree content-small">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    icon
+                <div class="col-lg-4 linktree-div">
+                    <a href="#">
+                        <img class="linktree-icon" src="./assets/icons/ajurveda.svg" alt="" srcset="">
+                        <p class="text-secondary linktree-text">Co je to ajurvéda?</p>
+                    </a>
                 </div>
-                <div class="col-lg-4">
-                    icon
+
+                <div class="col-lg-4 linktree-div">
+                    <a href="#">
+                        <img class="linktree-icon" src="./assets/icons/oil.svg" alt="" srcset="">
+                        <p class="text-secondary linktree-text">Jaké oleje používám?</p>
+                    </a>
                 </div>
-                <div class="col-lg-4">
-                    icon
+
+                <div class="col-lg-4 linktree-div">
+                    <a href="#">
+                        <img class="linktree-icon" src="./assets/icons/soul.svg" alt="" srcset="">
+                        <p class="text-secondary linktree-text">Poznej svou dóšu.</p>
+                    </a>
                 </div>
+
             </div>
         </div>
     </section>
@@ -138,15 +149,36 @@
 
 
     <section class="massages content-large" id="masaze">
-
+        <div class="container">
+            <div class="row pt-5">
+                <h1 class="text-center ">Blahodárné masáže</h1>
+                <div class="bd-example">
+                    <p>
+                        <a class=" collapsed" data-bs-toggle="collapse" href="#ABHYANGA" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <span class="arrow"><br> text </span>
+                        </a>
+                    </p>
+                    <div class="collapse" id="ABHYANGA">
+                        <div class="card card-body ">
+                            <div class="col-lg-4">foto</div>
+                            <div class="col-lg-4">text</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
 
     <section class="content-small">
         <div class="container">
-            <div class="row">
-                text
+            <div class="row motto-div">
+                <p class="text-secondary motto-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam
+                    erat volutpat. Mauris dictum facilisis augue. Suspendisse nisl. Nulla non lectus sed nisl molestie
+                    malesuada.</p>
+                <p class="text-secondary text-right motto-text">-Lorem ipsum</p>
             </div>
         </div>
     </section>
@@ -154,7 +186,24 @@
 
 
     <section class="massages content-large" id="kontakt">
+        <div class="container">
+            <div class="row pt-5">
+                <h1 class="text-center ">Kde se spolu setkáme?</h1>
+                <div class="col-lg-7 py-4">
+                    <p>Štěpánka Kee</p>
+                    <p>telefon: +420 777 450 911</p>
+                    <p>e-mail: blahodarna.pece@gmail.com</p>
+                    <p>adresa: tř. Obránců míru 243, 43801 Žatec</p>
+                    <p class="text-secondary motto-text">Jste mou inspirací...</p>
+                    <a class="btn btn-primary" href="http://">Rezervace</a>
 
+
+                </div>
+                <div class="col-lg-5 py-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.1790407179215!2d13.544552017373634!3d50.326949943441875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbec7066ab922063!2zNTDCsDE5JzM3LjIiTiAxM8KwMzInNDMuOCJF!5e0!3m2!1scs!2scz!4v1676218165894!5m2!1scs!2scz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -167,6 +216,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.js"></script>
+    <script>
+        var arr = document.querySelector('.arrow');
+        arr.addEventListener('click', function (event) {
+            event.target.classList.toggle('down');
+        });
+    </script>
 </body>
 
 </html>
