@@ -292,7 +292,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+  --bs-link-color-rgb: var(--bs-link-hover-color-rgb)!important;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -8397,7 +8397,18 @@ textarea.form-control-lg {
 
 .text-white {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) ;
+}
+
+.text-footer{
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) ;
+}
+
+.text-footer:hover{
+  color: var(--bs-link-hover-color-rgb)!important;
+  transition: all 0.25s;
+
 }
 
 .text-body {
