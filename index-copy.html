@@ -46,6 +46,9 @@
                     <li class="nav-item">
                         <a class="nav-link " href="#kontakt">Kontakt</a>
                     </li>
+                    <li>
+                        <a class="nav-link " href="#">Kontraindikace</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link " href="#">Rezervace</a>
                     </li>
@@ -66,16 +69,17 @@
 
 
     <section class="content-large header w-100 d-flex align-items-center">
-        <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center text-header">
-                    <h1>Nadpis úvodní stránky</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Mauris
-                        dictum facilisis augue. Suspendisse nisl. Nulla non lectus sed nisl molestie malesuada. Cras
-                        elementum. Fusce tellus odio, dapibus id fermentum quis, suscipit id erat.</p>
-                    <a class="btn btn-secondary" href="http://">Text</a>
-                    <a class="btn btn-primary" href="http://">Rezervace</a>
+                    <div class="col-lg-12">
+                        <img class="img-header" src="./assets/logos/Logo_trans_bile.svg" alt="Logo Blahodárné péče">
+                    </div>
+                    <div class="col-lg-12 py-5">
+                        <a class="btn btn-secondary" href="http://">Text</a>
+                        <a class="btn btn-primary" href="http://">Rezervace</a>
+                    </div>
+
                 </div>
 
             </div>
@@ -150,23 +154,57 @@
 
     <section class="massages content-large" id="masaze">
         <div class="container">
-            <div class="row pt-5">
-                <h1 class="text-center ">Blahodárné masáže</h1>
-                <div class="bd-example">
-                    <p>
-                        <a class=" collapsed" data-bs-toggle="collapse" href="#ABHYANGA" role="button"
-                            aria-expanded="false" aria-controls="collapseExample">
-                            <span class="arrow"><br> text </span>
-                        </a>
-                    </p>
-                    <div class="collapse" id="ABHYANGA">
-                        <div class="card card-body ">
-                            <div class="col-lg-4">foto</div>
-                            <div class="col-lg-4">text</div>
+            <div class="row pt-5 text-center ">
+                <h1>Blahodárné masáže</h1>
+                <div class="massage pt-5">
+
+                    <a class="massage-link" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                        <h2>Ajurvédská <b>abhynga</b> masáž</h2>
+                    </a>
+                    <a class="massage-link" data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                        <p>Cena: 90 min 900 Kč, 120 min 1200 Kč | Více informací</p>
+                    </a>
+
+                    <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <div class="col-lg-4"><img src="/assets/img/bg-header.jpg" alt="" srcset="">text</div>
+                                    <div class="col-lg-8">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nam
+                                        sed tellus id magna elementum tincidunt. Nullam faucibus mi quis velit.
+                                        Pellentesque arcu. Integer in sapien. Maecenas libero. Morbi scelerisque luctus
+                                        velit. Pellentesque sapien. Nullam sapien sem, ornare ac, nonummy non, lobortis
+                                        a enim. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus.
+                                        Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat. Phasellus
+                                        et lorem id felis nonummy placerat. Nullam faucibus mi quis velit. Vestibulum
+                                        fermentum tortor id mi. Mauris dictum facilisis augue. Quis autem vel eum iure
+                                        reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+                                        vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? Fusce nibh. Etiam
+                                        bibendum elit eget erat. Proin pede metus, vulputate nec, fermentum fringilla,
+                                        vehicula vitae, justo. Etiam posuere lacus quis dolor.
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <hr style="width:500px; margin: auto;">
                 </div>
+
+
+
             </div>
+        </div>
         </div>
     </section>
 
@@ -234,18 +272,18 @@
         </div>
     </section>
 
-
-
     <footer class="content-small">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="footer">
                         <p class="text-white">Štěpánka Kee<br>
-                            IČO: 07620799<br>
-                            Fyzická osoba podnikající dle živnostenského zákona.</p>
+                            <span>IČO: 07620799</span><br>
+                            Fyzická osoba podnikající dle živnostenského zákona.
+                        </p>
                         <a class="text-footer" href="#">Obchodní podmínky</a><br>
                         <a class="text-footer" href="#">Kontraindikace</a>
+
                     </div>
 
                 </div>
