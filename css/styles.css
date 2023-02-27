@@ -43,14 +43,21 @@
     position: relative;
 }
 
-.img-header{
-    height:400px;
+.img-header {
+    height: 400px;
     -webkit-filter: drop-shadow(5px 5px 5px #222222);
     filter: drop-shadow(5px 5px 5px #222222);
 }
 
 .about {
     padding: 3rem;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 @media (max-width: 992px) {
@@ -65,6 +72,10 @@
 
     .text-header {
         padding: 5rem !important;
+    }
+
+    .img-header {
+        height: 20%;
     }
 
 }
@@ -172,9 +183,9 @@
     background: #705642;
 }
 
-.linktree-div:hover > a > p {
+.linktree-div:hover>a>p {
     color: #705642 !important;
-    fill:#705642 !important;
+    fill: #705642 !important;
     transition: all 0.35s;
 }
 
@@ -206,45 +217,44 @@
 .contact-text {
     padding-top: 1.6rem;
     font-size: 20px !important;
-    color:#705642;
+    color: #705642;
 }
 
-.logo-footer{
+.logo-footer {
 
     height: 200px;
     width: 200px;
 }
 
-.footer{
-    padding-top:2rem;
+.footer {
+    padding-top: 2rem;
 }
 
-.motto-div{
+.motto-div {
     padding-top: 3rem;
     text-align: center;
-    color:white;
+    color: white;
 }
 
-.motto-text{
+.motto-text {
     font-size: 30px !important;
 }
 
-.text-right{
-    text-align: end!important;
+.text-right {
+    text-align: end !important;
 }
 
-.massage-link{
+.massage-link {
     cursor: pointer;
-    color:#705642;
+    color: #705642;
     transition: all 0.2s;
-
+    text-align: center;
 
 }
 
-.massage-link:hover{
-    color:#dbc87b;
+.massage-link:hover {
+    color: #dbc87b;
     transition: all 0.2s;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
 
 }
-
