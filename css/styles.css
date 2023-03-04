@@ -13,7 +13,7 @@
 }
 
 .social-nav {
-    margin-left: 2rem;
+    margin-left: 0.5rem;
 }
 
 .content-large {
@@ -53,9 +53,6 @@
     margin: 2.5rem 0 2.5rem 0;
 }
 
-.m-nav-btn{
-    margin: 2.5rem 50% 2.5rem 50%;
-}
 
 @media (max-width: 992px) {
     .m-nav{
@@ -67,7 +64,7 @@
     }
 
     .nav-link {
-        padding: 1rem 0 0 1rem !important;
+        margin: 1rem 0 0 0 !important;
     }
 
     .text-header {
@@ -81,7 +78,9 @@
     .motto-text {
         font-size: 1.5rem !important;
     }
-
+    .content-small{
+        min-height: 280px;
+    }
 }
 
 .social-nav-item {
@@ -113,9 +112,12 @@
 .navbar-toggler {
     width: 25px;
     height: 25px;
-    margin-right: 1rem;
     position: relative;
     transition: .5s ease-in-out;
+    margin: 2.5rem 52.5% 2.5rem 47.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navbar-toggler,
