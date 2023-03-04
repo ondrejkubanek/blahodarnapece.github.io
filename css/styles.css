@@ -21,7 +21,7 @@
 }
 
 .content-small {
-    min-height: 30vh;
+    min-height: 205px;
     background-color: #dbc87b;
 }
 
@@ -49,11 +49,18 @@
     filter: drop-shadow(5px 5px 5px #222222);
 }
 
-.about {
-    padding: 3rem;
+.m-nav{
+    margin: 2.5rem 0 2.5rem 0;
+}
+
+.m-nav-btn{
+    margin: 2.5rem 50% 2.5rem 50%;
 }
 
 @media (max-width: 992px) {
+    .m-nav{
+        margin:0!important;
+    }
     .social-nav {
         margin: 0 !important;
         padding: 1rem 0 1rem 0.6rem !important;
@@ -235,6 +242,7 @@
 
 .motto-text {
     font-size: 1.8rem ;
+    margin: 0 !important;
 }
 
 .text-right {
