@@ -54,6 +54,7 @@
 }
 
 .absolute-1{
+
     position: absolute;
     width: 213px;
     left: 0;
@@ -87,6 +88,9 @@
     }
     .content-small{
         min-height: 280px;
+    }
+    .absolute-1{
+        display:none;
     }
 }
 

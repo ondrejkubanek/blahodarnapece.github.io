@@ -8,6 +8,7 @@
     <title>Blahodárná péče | Štěpánka Kee</title>
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <meta name="author" content="Ondřej Kubánek">
 </head>
 
 <body>
@@ -25,9 +26,6 @@
 
     <nav class="navbar bg-light navbar-expand-lg">
         <div class="container">
-            <!--<a class="navbar-brand " href="/"><img id="ico" class="logo-nav" src="./assets/logos/Logo_trans.svg"
-                    alt="Logo CHCHP"></a>!-->
-
             <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around m-nav-btn"
                 type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -57,10 +55,10 @@
                         <a class="nav-link " href="#">Rezervace</a>
                     </li>
                     <li class="nav-item social-nav position-relative">
-                        <a class="nav-link social-nav-item" href="#">
+                        <a class="nav-link social-nav-item" target="_blank" href="https://www.instagram.com/stepanka.kee/">
                             <img class="icon" src="./assets/icons/instagram.svg" alt="Instagram" height="25px">
                         </a>
-                        <a class="nav-link social-nav-item" href="#">
+                        <a class="nav-link social-nav-item" target="_blank" href="https://www.facebook.com/profile.php?id=100088248204150">
                             <img class="icon" src="./assets/icons/facebook.svg" alt="Facebook" height="25px">
                         </a>
                     </li>
@@ -84,13 +82,9 @@
                         <a class="btn btn-secondary m-2" href="#about">Zjisti více</a>
                         <a class="btn btn-primary m-2" href="http://">Rezervace</a>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
 
@@ -127,21 +121,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 linktree-div">
-                    <a href="#">
+                    <a href="./ajurveda">
                         <img class="linktree-icon" src="./assets/icons/ajurveda.svg" alt="" srcset="">
                         <p class="text-secondary linktree-text">O Ajurvédě</p>
                     </a>
                 </div>
 
                 <div class="col-lg-4 linktree-div">
-                    <a href="#">
+                    <a href="./dosa-test">
                         <img class="linktree-icon" src="./assets/icons/soul.svg" alt="" srcset="">
                         <p class="text-secondary linktree-text">Poznej svou dóšu</p>
                     </a>
                 </div>
 
                 <div class="col-lg-4 linktree-div">
-                    <a href="#">
+                    <a href="./oleje">
                         <img class="linktree-icon" src="./assets/icons/oil.svg" alt="" srcset="">
                         <p class="text-secondary linktree-text">Oleje v Blahodárné péči</p>
                     </a>
@@ -182,9 +176,42 @@
                                         bylinné oleje do tkání. Po masáži je ideální počkat zhruba půl až jednu hodinu a
                                         poté si dopřát horkou koupel nebo sprchu.
                                     </div>
-                                    <div class="col-lg-5">
-                                        <img class="rounded mx-auto d-block img-fluid  mt-4"
-                                            src="./assets/img/bg-header.jpg" alt="" srcset="">
+                                    <div class="col-lg-5 mt-4">
+                                        <div id="carousel-photos" class="carousel slide" data-bs-ride="true">
+                                            <div class="carousel-indicators">
+                                              <button type="button" data-bs-target="#carousel-photos" data-bs-slide-to="0" class="active"
+                                                aria-current="true" aria-label="Slide 1"></button>
+                                              <button type="button" data-bs-target="#carousel-photos" data-bs-slide-to="1"
+                                                aria-label="Slide 2"></button>
+                                              <button type="button" data-bs-target="#carousel-photos" data-bs-slide-to="2"
+                                                aria-label="Slide 3"></button>
+                                            </div>
+                                            <div class="carousel-inner rounded">
+                                              <div class="carousel-item active">
+                                                <a href="assets/img/masaze/001_verca_masaze-3.jpg" data-lightbox="galerie"
+                                                  data-title="Zahájení turistické sezóny 2022 v Žatci"><img src="assets/img/masaze/001_verca_masaze-3.jpg"
+                                                    class="d-block w-100" alt="Zahájení turistické sezóny 2022 v Žatci"></a>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <a href="assets/img/masaze/001_verca_masaze-10.jpg" data-lightbox="galerie"
+                                                  data-title="Kulturní akce v Klášterní zahradě"><img src="assets/img/masaze/001_verca_masaze-10.jpg" class="d-block w-100"
+                                                    alt="Kulturní akce v Klášterní zahradě"></a>
+                                              </div>
+                                              <div class="carousel-item">
+                                                <a href="assets/img/masaze/001_verca_masaze.jpg" data-lightbox="galerie"
+                                                  data-title="Kulturní akce v Chrámu chmele a piva"><img src="assets/img/masaze/001_verca_masaze.jpg"
+                                                    class="d-block w-100" alt="Kulturní akce v Chrámu chmele a piva"></a>
+                                              </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-photos" data-bs-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Předchozí</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carousel-photos" data-bs-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="visually-hidden">Následující</span>
+                                            </button>
+                                          </div>
                                     </div>
                                     <div class="col-lg-7">
                                         <p class="text-secondary-massage">Výhody a indikace</p>
@@ -374,6 +401,47 @@
                 </div>
 
                 <div class="massage py-3">
+                    <a class="massage-link" data-bs-toggle="modal" data-bs-target="#masaz-6">
+                        <h2>Indická masáž hlavy <b>champi</b></h2>
+                    </a>
+                    <a class="massage-link" data-bs-toggle="modal" data-bs-target="#masaz-6">
+                        <p>Cena: 30 min 300 Kč | Více informací</p>
+                    </a>
+                    <div class="modal fade bd-example-modal-lg" id="masaz-6" tabindex="-1" role="dialog"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h2 class="modal-title">Indická masáž hlavy <b>champi</b>
+                                    </h2>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Zavřít"></button>
+                                </div>
+                                <div class="modal-body row">
+                                    <div class="col-lg-12">text
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <img class="rounded mx-auto d-block img-fluid  mt-4"
+                                            src="./assets/img/bg-header.jpg" alt="" srcset="">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p class="text-secondary-massage">Výhody a indikace</p>
+                                        <ul>
+                                            <li>text</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>-->
+                        </div>
+                    </div>
+                    <hr style="width:200px; margin: auto;">
+                </div>
+
+                <div class="massage py-3">
                     <a class="massage-link" data-bs-toggle="modal" data-bs-target="#masaz-5">
                         <h2>Relaxační <b>blahodárná</b> masáž</h2>
                     </a>
@@ -424,34 +492,33 @@
                 </div>
 
                 <div class="massage py-3">
-                    <a class="massage-link" data-bs-toggle="modal" data-bs-target="#masaz-6">
-                        <h2><b>Aromaterapeutická</b> masáž</h2>
+                    <a class="massage-link" data-bs-toggle="modal" data-bs-target="#masaz-8">
+                        <h2><b>Aroma holistická</b> masáž</h2>
                     </a>
-                    <a class="massage-link" data-bs-toggle="modal" data-bs-target="#masaz-6">
-                        <p>Cena: 60 min 700 Kč, 90 min 1000 Kč | Více informací</p>
+                    <a class="massage-link" data-bs-toggle="modal" data-bs-target="#masaz-8">
+                        <p>Cena: 90 min 1000 Kč | Více informací</p>
                     </a>
-                    <div class="modal fade bd-example-modal-lg" id="masaz-6" tabindex="-1" role="dialog"
+                    <div class="modal fade bd-example-modal-lg" id="masaz-8" tabindex="-1" role="dialog"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h2 class="modal-title"><b>Aromaterapeutická</b> masáž
+                                    <h2 class="modal-title"><b>Aroma holistická</b> masáž</b>
                                     </h2>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Zavřít"></button>
                                 </div>
                                 <div class="modal-body row">
-                                    <div class="col-lg-12">text
+                                    <div class="col-lg-12">Při aroma holistické masáži v Blahodárné péči budete zvolna uvedeni do stavu hluboké relaxace, kdy váš organismus dostane novou příležitost k regeneraci a vaše fyzické i duševní pochody se harmonizují. Stane se z vás nový člověk, který se dokáže lépe vyrovnat s každodenním stresem i s dávno zapomenutými bolestmi. Aroma masáž zahrnuje ošetření celého těla od vlasové části hlavy až po prsty u nohou. Celkově jde o masáž lehkou, hladivou, relaxační. 
+                                        <br>Vonné esence si sami zvolíte pomocí karet, které vznikly propojením dvou silných energií – energií mandal a energií éterických olejů. Příroda přirozeně vytváří mandaly, které nás přitahují a oslovují svou krásou. S mandalami vytvořenými lidmi se setkáváme napříč historií (od pradávna se vytvářely jako magické a ochranné obrazce a také se využívaly jako forma duchovní cesty. Postupně se staly i nedílnou součástí architektury. Nacházíme je v základech posvátných staveb, chrámů a proslulých rosetových oknech. C. G. Jung ve své psychologické praxi začal využívat meditace s mandalami jako jeden z prostředků psychoterapie).
+                                        
                                     </div>
                                     <div class="col-lg-5">
                                         <img class="rounded mx-auto d-block img-fluid  mt-4"
                                             src="./assets/img/bg-header.jpg" alt="" srcset="">
                                     </div>
                                     <div class="col-lg-7">
-                                        <p class="text-secondary-massage">Výhody a indikace</p>
-                                        <ul>
-                                            <li>text</li>
-                                        </ul>
+                                        Mandaly na kartách představují vůně jednotlivých rostlin. Spojením vůně éterického oleje a mandaly zobrazující energetickou vibraci tohoto oleje pozitivně podporujete své srdce. Kvalitní éterické oleje používané v Blahodárné péči, mají dokonalé chemické propojení, jiskřivé světlo a originální léčivou sílu, jakou umí vytvořit pouze příroda sama. Působí léčivě na celého člověka na všech jeho úrovních – fyzické, psychické i duchovní.
                                     </div>
                                 </div>
                             </div>
@@ -505,60 +572,19 @@
                     <hr style="width:200px; margin: auto;">
                 </div>
 
-                <div class="massage py-3">
-                    <a class="massage-link" data-bs-toggle="modal" data-bs-target="#masaz-8">
-                        <h2>Masáž <b>lávovými kameny</b></h2>
-                    </a>
-                    <a class="massage-link" data-bs-toggle="modal" data-bs-target="#masaz-8">
-                        <p>Cena: 60 min 700 Kč, 90 min 1000 Kč | Více informací</p>
-                    </a>
-                    <div class="modal fade bd-example-modal-lg" id="masaz-8" tabindex="-1" role="dialog"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h2 class="modal-title">Masáž <b>lávovými kameny</b>
-                                    </h2>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Zavřít"></button>
-                                </div>
-                                <div class="modal-body row">
-                                    <div class="col-lg-12">text
-                                    </div>
-                                    <div class="col-lg-5">
-                                        <img class="rounded mx-auto d-block img-fluid  mt-4"
-                                            src="./assets/img/bg-header.jpg" alt="" srcset="">
-                                    </div>
-                                    <div class="col-lg-7">
-                                        <p class="text-secondary-massage">Výhody a indikace</p>
-                                        <ul>
-                                            <li>text</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--<div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>-->
-                        </div>
-                    </div>
-                    <hr style="width:200px; margin: auto;">
-                </div>
-
                 <div class="massage py-3 pb-5">
                     <a class="massage-link" data-bs-toggle="modal" data-bs-target="#masaz-9">
-                        <h2>Ošetření <b>spoušťových bodů</b></h2>
+                        <h2>Uvolňující masáž <b>zad a šíje</b></h2>
                     </a>
                     <a class="massage-link" data-bs-toggle="modal" data-bs-target="#masaz-9">
-                        <p>Cena: 30 min 300 Kč | Více informací</p>
+                        <p>Cena: 40 min 500 Kč | Více informací</p>
                     </a>
                     <div class="modal fade bd-example-modal-lg" id="masaz-9" tabindex="-1" role="dialog"
                         aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h2 class="modal-title">Ošetření <b>spoušťových bodů</b>
+                                    <h2 class="modal-title">Uvolňující masáž <b>zad a šíje</b>
                                     </h2>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Zavřít"></button>
