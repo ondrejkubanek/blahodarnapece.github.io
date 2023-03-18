@@ -49,11 +49,11 @@
     filter: drop-shadow(5px 5px 5px #222222);
 }
 
-.m-nav{
+.m-nav {
     margin: 2.5rem 0 2.5rem 0;
 }
 
-.absolute-1{
+.absolute-1 {
 
     position: absolute;
     width: 213px;
@@ -61,20 +61,36 @@
     rotate: -20deg;
 }
 
-.ajurveda-logo{
+.ajurveda-logo {
     height: 5rem;
 }
 
-.ajurveda-text-icon{
+.ajurveda-text-icon {
     height: 10rem;
+}
+
+.galerie {
+    margin: auto;
+    width: 50%;
+}
+
+.dosa-text {
+    color: #705642 !important;
+    padding-top: 1rem;
+}
+
+.ajurveda-div:hover>h2 {
+    color: #cbaf3d !important;
+    transition: all 0.35s;
 }
 
 
 
 @media (max-width: 992px) {
-    .m-nav{
-        margin:0!important;
+    .m-nav {
+        margin: 0 !important;
     }
+
     .social-nav {
         margin: 0 !important;
         padding: 1rem 0 1rem 0 !important;
@@ -87,18 +103,25 @@
     .text-header {
         padding: 5rem !important;
     }
-    .img-header{
+
+    .img-header {
         height: 250px;
     }
 
     .motto-text {
         font-size: 1.5rem !important;
     }
-    .content-small{
+
+    .content-small {
         min-height: 280px;
     }
-    .absolute-1{
-        display:none;
+
+    .absolute-1 {
+        display: none;
+    }
+
+    .galerie {
+        width: 100% !important;
     }
 }
 
@@ -262,7 +285,7 @@
 }
 
 .motto-text {
-    font-size: 1.8rem ;
+    font-size: 1.8rem;
     margin: 0 !important;
 }
 
