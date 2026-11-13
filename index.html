@@ -8,20 +8,22 @@
 
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- NOVÉ: doplňkové styly pro přestavěnou úvodní stránku -->
+    <link href="css/prodej.css" rel="stylesheet" />
     <meta name="author" content="Ondřej Kubánek">
     <meta name="format-detection" content="telephone=no">
 
-    <title>Blahodárná péče | Štěpánka Kee</title>
+    <title>Blahodárná péče, masáže v Žatci</title>
     <meta name="description"
-        content="Ráda bych se s Vámi podělila o lásku k ajurvédským a&nbsp;relaxačním masážím. Otevření vlastního salonu je pro mě splněním dlouholetého snu.">
+        content="Ájurvédské, lymfatické a relaxační masáže, Head Spa a maderoterapie v Žatci. Vyberte si terapeutku, prohlédněte nabídku a rezervujte online.">
     <meta name="keywords"
-        content="masáže žatec, blahodárná péče, štěpánka kee, ajurvédské masáže, bylinné měšce, město žatec, masáže v žatci, indická masáž, aroma masáž, ajurvéda, masáže od štěpánky">
+        content="masáže žatec, blahodárná péče, štěpánka kee, lenka štěpánková, ajurvédské masáže, bylinné měšce, head spa, maderoterapie, lymfatická masáž, dárkové poukazy na masáž">
     <meta name="robots" content="index, follow">
 
     <meta property="og:url" content="https://www.blahodarnapece.cz/">
     <meta property="og:type" content="website">
     <meta property="og:description"
-        content="Ráda bych se s Vámi podělila o lásku k ajurvédským a&nbsp;relaxačním masážím. Otevření vlastního salonu je pro mě splněním dlouholetého snu.">
+        content="Ájurvédské, lymfatické a relaxační masáže, Head Spa a maderoterapie v Žatci. Rezervace online.">
     <meta property="og:image" content="assets/img/bg-header.jpg">
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
@@ -44,7 +46,10 @@
 
                 <ul class="navbar-nav m-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="./#about">O mně</a>
+                        <a class="nav-link nav-home" href="./" title="Domů – do sebe">
+                            <i class="bi bi-heart" aria-hidden="true"></i><i class="bi bi-heart-fill" aria-hidden="true"></i>
+                            Domů
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="./#masaze">Masáže</a>
@@ -53,14 +58,16 @@
                         <a class="nav-link " href="./poukazy">Dárkové poukazy</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="./#o-nas">O nás</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link " href="./#kontakt">Kontakt</a>
                     </li>
                     <li>
                         <a class="nav-link " href="./kontraindikace">Kontraindikace</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " target="_blank"
-                            href="https://booking.reservanto.cz/Modal/?id=20047">Rezervace</a>
+                        <a class="nav-link " target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervace</a>
                     </li>
                     <li class="nav-item social-nav position-relative">
                         <a class="nav-link social-nav-item" target="_blank"
@@ -80,7 +87,7 @@
     </nav>
 
 
-
+    <!-- ============ HLAVIČKA ============ -->
     <section class="content-large header w-100 d-flex align-items-center">
         <div class="container">
             <div class="row">
@@ -89,11 +96,8 @@
                         <img class="img-header" src="./assets/logos/Logo_trans_bile.svg" alt="Logo Blahodárné péče">
                     </div>
                     <div class="col-lg-12 py-5">
-                        <p style="color:white; font-size: 20px; text-shadow: 1px 1px 0 black;"></p>
-                        <a class="btn btn-secondary m-2" href="#about">Zjisti více</a>
-                        <a class="btn btn-primary m-2" target="_blank"
-                            href="https://booking.reservanto.cz/Modal/?id=20047">Rezervace</a>
-
+                        <a class="btn btn-secondary m-2" href="#masaze">Vybrat masáž</a>
+                        <a class="btn btn-primary m-2" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervace</a>
                     </div>
                 </div>
             </div>
@@ -101,79 +105,560 @@
     </section>
 
 
-
-    <section class="about content- py-5" id="about">
+    <!-- ============ 1) KDO SE VÁM VĚNUJE (karty terapeutek) ============ -->
+    <section class="therapists py-5" id="terapeutky">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 py-3">
-                    <img src="./assets/img/stepanka_2.jpg" alt="Štěpánka Kee" class="img-thumbnail">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center pb-4">
+                    <h1>Vítejte v Blahodárné péči</h1>
+                    <p class="pt-2">Dopřejte si chvíle hluboké relaxace, regenerace a harmonie. Objevte naši nabídku
+                        ájurvédských a relaxačních masáží, lymfatických masáží, beauty procedur a Head Spa v Žatci.</p>
+                    <p class="pt-2"><b>Vyberte si svou masérku a rezervujte si termín pohodlně online a nebo telefonicky.</b></p>
                 </div>
-                <div class="col-lg-8 pt-3">
-                    <h1>Vítejte na stránkách Blahodárné péče,</h1>
-                    <p class="pt-3 justify">ráda bych se s&nbsp;Vámi podělila o lásku k ajurvédským a&nbsp;relaxačním
-                        masážím.
-                        Otevření vlastního salonu je pro mě splněním dlouholetého snu. Cítím velikou vděčnost za to, že
-                        jsem na své životní cestě potkala "ty správné" lidi, kteří mě k východním naukám a&nbsp;k
-                        masážím
-                        přivedli.</p>
-                    <p class="justify">Můj první kontakt s&nbsp;ajurvédskými masážemi se odehrál v roce 2013,
-                        kdy jsem pod vedením duchovního učitele z Indie a&nbsp;jeho ženy z Čech získala dar v podobě
-                        zasvěcení do léčivé síly masáží a&nbsp;do tajů a&nbsp;učení Indie. Díky tomuto vědění jsem
-                        prožila na své
-                        životní cestě zásadní transformaci, ze které budu čerpat pravděpodobně do konce svého života.
-                        Energii získanou z této zkušenosti předávám s&nbsp;radostí, pokorou a&nbsp;vděkem dál,
-                        prostřednictvím
-                        svých masáží.</p>
+            </div>
+            <div class="row g-4">
 
+                <!-- Štěpánka -->
+                <div class="col-lg-6">
+                    <article class="therapist-card">
+                        <h2 class="therapist-name">Štěpánka Kee</h2>
+                        <ul class="therapist-services">
+                            <li>Ájurvédské masáže a procedury</li>
+                            <li>Lymfatické masáže</li>
+                            <li>Relaxační masáže</li>
+                        </ul>
+                        <p class="therapist-tel"><a href="tel:+420777450911">+420 777 450 911</a></p>
+                        <a class="btn btn-primary" href="#nabidka-stepanka">Více</a>
+                    </article>
                 </div>
-                <div class="col-lg-7">
-                    <p class="justify">V masážní praxi přistupuji ke každému člověku celostně, protože věřím, že bolesti
-                        těla jsou často spojené s&nbsp;bolestmi duše a&nbsp;že je důležité zabývat se obojím, abychom
-                        dosáhli
-                        opravdového uzdravení a&nbsp;uvolnění. </p>
-                    <p class="justify">Sama se stále učím, skrze vzestupy i pády, skrze vše, co život nabízí. To mě na
-                        životě nejvíce baví. Má cesta je cesta vědomého seberozvoje. Věřím, že být dobrým člověkem je to
-                        podstatné. A&nbsp;vy jste mou inspirací… <a href="#" data-bs-toggle="modal"
-                            data-bs-target="#o-mne">Více o mně.</a></p>
+
+                <!-- Lenka -->
+                <div class="col-lg-6">
+                    <article class="therapist-card">
+                        <h2 class="therapist-name">Lenka Štěpánková</h2>
+                        <ul class="therapist-services">
+                            <li>Ájurvédské masáže</li>
+                            <li>Lymfatické masáže</li>
+                            <li>Head Spa</li>
+                            <li>Maderoterapie</li>
+                        </ul>
+                        <p class="therapist-tel"><a href="tel:+420723249955">+420 723 249 955</a></p>
+                        <a class="btn btn-primary" href="#nabidka-lenka">Více</a>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ 2) DÁRKOVÝ POUKAZ ============ -->
+    <section class="voucher-wrap">
+        <div class="container">
+            <div class="voucher">
+                <div class="voucher-text">
+                    <h2>Darujte svým blízkým chvíli jen pro sebe</h2>
+                    <p>Ať už touží po relaxační masáži, ájurvédské proceduře nebo jedinečném zážitku Head Spa,
+                        s dárkovým poukazem od nás si dopřejí pravou blahodárnou péči.</p>
+                </div>
+                <a class="btn btn-primary" href="./poukazy">Objednat poukaz</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ 3) NABÍDKA VŠECH MASÁŽÍ ============ -->
+    <section class="massages-offer py-5" id="masaze">
+        <div class="container">
+            <h1 class="text-center pb-2">Nabídka masáží</h1>
+            <p class="text-center offer-hint">Kliknutím na masáž se zobrazí popis a odkaz na rezervaci.</p>
+            <div class="row g-5 pt-3">
+
+                <!-- Štěpánka -->
+                <div class="col-lg-6 offer-col" id="nabidka-stepanka">
+                    <h2 class="offer-name">Štěpánka Kee</h2>
+                    <h3 class="offer-group">Ájurvédské masáže a procedury</h3>
+<div class="accordion accordion-flush massage-list" id="acc-s-0">
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-s-1">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-s-1" aria-expanded="false" aria-controls="c-s-1">
+        <span class="massage-head">
+          <span class="massage-title">Indická masáž hlavy <b>Champi</b></span>
+          <span class="massage-price">45 min 750 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-s-1" class="accordion-collapse collapse" aria-labelledby="h-s-1" data-bs-parent="#acc-s-0">
+      <div class="accordion-body">
+        <p>Tradiční ajurvédská technika Champi, která přináší okamžitou úlevu přetížené mysli i tělu. V Blahodárné péči tato procedura zahrnuje jemné a hluboce uvolňující ošetření hlavy, obličeje, krku a ramen. Účinně rozpouští napětí v šíji, ulevuje od bolestí hlavy i unavených očí a zároveň podporuje zdraví a kvalitu vlasů. Masáž působí na fyzické i mentální úrovni – odplavuje každodenní stres, psychickou únavu a vnitřní neklid a navozuje pocit hlubokého míru a duševní pohody.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-s-2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-s-2" aria-expanded="false" aria-controls="c-s-2">
+        <span class="massage-head">
+          <span class="massage-title"><b>Ájurvédská masáž</b> zad, rukou, šíje a hlavy</span>
+          <span class="massage-price">60 min 1 000 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-s-2" class="accordion-collapse collapse" aria-labelledby="h-s-2" data-bs-parent="#acc-s-0">
+      <div class="accordion-body">
+        <p>Dopřejte úlevu partiím, které během dne nesou největší tíhu stresu a únavy. Tato komplexní ájurvédská procedura propojuje uvolňující masáž zad a šíje s jemnou péčí o přetížené ruce a hlavu. Pomocí teplých bylinných olejů a cílených tahů rozpouští hluboké svalové napětí, ulevuje od bolestí hlavy i ztuhlých paží a harmonizuje tok životní energie. Výsledkem je okamžitý pocit lehkosti v horní polovině těla, zklidnění roztěkané mysli a hluboká regenerace celého organismu.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-s-3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-s-3" aria-expanded="false" aria-controls="c-s-3">
+        <span class="massage-head">
+          <span class="massage-title">Ájurvédská masáž nohou <b>Pada Abhyanga</b></span>
+          <span class="massage-price">60 min 1 200 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-s-3" class="accordion-collapse collapse" aria-labelledby="h-s-3" data-bs-parent="#acc-s-0">
+      <div class="accordion-body">
+        <p>Úleva pro vaše nohy, které vás nesou celým dnem. Terapie Pada Abhyanga propojuje nanášení teplého bylinného oleje s jemnou, zklidňující masáží nohou a chodidel. Tato hluboce uvolňující technika stimuluje reflexní body, harmonizuje nervový systém a navrací celému tělu ztracenou rovnováhu a vitalitu. V Blahodárné péči je tento rituál navíc obohacen o jemný bylinný peeling nohou, který pokožku dokonale zjemní, prokrví a připraví na vstřebání vzácných olejů.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-s-4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-s-4" aria-expanded="false" aria-controls="c-s-4">
+        <span class="massage-head">
+          <span class="massage-title">Ájurvédská olejová masáž <b>Abhyanga</b></span>
+          <span class="massage-price">60 min 1 000 Kč / 90 min 1 500 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-s-4" class="accordion-collapse collapse" aria-labelledby="h-s-4" data-bs-parent="#acc-s-0">
+      <div class="accordion-body">
+        <p>Abhyanga masáž je tradiční rituál péče o tělo, který vychází z tisícileté indické tradice. Masáž probíhá pomocí speciálních teplých bylinných olejů, které pečlivě vybíráme přesně podle vaší aktuální fyzické i psychické konstituce (dóši). Hluboké a plynulé tahy harmonizují celý organismus a odplavují nahromaděný stres. V Blahodárné péči rituál zahajujeme prohřátím těla teplými ručníky, díky čemuž se pokožka uvolní a léčivé bylinné oleje proniknou mnohem hlouběji do tkání. Pro maximální účinek doporučujeme nechat oleje působit ještě 30 až 60 minut po masáži a poté si doma dopřát horkou sprchu či koupel.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-s-5">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-s-5" aria-expanded="false" aria-controls="c-s-5">
+        <span class="massage-head">
+          <span class="massage-title"><b>Ájurvédská masáž</b> s bylinným peelingem</span>
+          <span class="massage-price">90 min 1 600 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-s-5" class="accordion-collapse collapse" aria-labelledby="h-s-5" data-bs-parent="#acc-s-0">
+      <div class="accordion-body">
+        <p>Hloubková očista, hebkost a nová energie. V Blahodárné péči tuto proceduru spojuji s olejovou masáží Abhyanga, při které využívám výživný olej a byliny odpovídající konstituci vašeho těla (dóši). Dlouhé masážní tahy odstraňují odumřelé buňky, čistí póry do hloubky a podporují přirozenou regeneraci a obnovu pokožky. Peeling je skvělou celoroční péčí – před létem pokožku dokonale připraví na rovnoměrné opálení a v létě ji zase hloubkově vyživí a promastí po slunění. Pro maximální účinek doporučuji proceduru spojit s prohřátím v bylinném parním boxu (Swedana). Po této masáži vás čeká teplá sprcha a pocit lehkosti.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-s-6">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-s-6" aria-expanded="false" aria-controls="c-s-6">
+        <span class="massage-head">
+          <span class="massage-title">Ájurvédská masáž bylinnými měšci – <b>Pinda Sweda</b></span>
+          <span class="massage-price">90 min 1 600 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-s-6" class="accordion-collapse collapse" aria-labelledby="h-s-6" data-bs-parent="#acc-s-0">
+      <div class="accordion-body">
+        <p>Hluboké prohřátí těla a síla léčivých bylin! Tradiční ájurvédská terapie Pinda Sweda využívá plátěné měšce naplněné vybranou směsí bylin a vysoce kvalitní přírodní oleje. V Blahodárné péči měšce nahřívám v horké páře. Masáž teplým olejem a nahřáté měšce pomohou pokožce otevřít póry a uvolněné bylinné esence pronikají přímo do hlubších tkání, svalů i kloubů. Speciálními masážními tahy – poťukáváním a kroužením ošetřuji celé tělo. Terapie účinně rozpouští svalovou ztuhlost a bolest, podporuje přirozenou detoxikaci, odplavuje hlubokou únavu i vyčerpání a celkově posiluje vaše zdraví a vitalitu.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-s-7">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-s-7" aria-expanded="false" aria-controls="c-s-7">
+        <span class="massage-head">
+          <span class="massage-title">Královská péče <b>Rasayana</b></span>
+          <span class="massage-price">120 min 2 000 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-s-7" class="accordion-collapse collapse" aria-labelledby="h-s-7" data-bs-parent="#acc-s-0">
+      <div class="accordion-body">
+        <p>Toužíte po zážitku jako v pravých ájurvédských lázních? Dopřejte si náš nejkomplexnější rituál Rasayana, který propojuje jedinečnou kombinaci uklidňujících a očistných procedur. Během této terapie se vaše tělo prohřeje v tradičním bylinném parním boxu (Swedana), uvolní se při celotělové olejové masáži od konečků prstů na nohou až po hlavu a obličej, zbaví se únavy díky jemnému peelingu zad a vše završí hloubkově vyživující bahenní zábal nohou a osvěžující závěrečná sprcha. Z Blahodárné péče budete odcházet lehcí, odpočatí a doslova jako znovuzrození.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 class="offer-group">Lymfatické masáže</h3>
+<div class="accordion accordion-flush massage-list" id="acc-s-1">
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-s-8">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-s-8" aria-expanded="false" aria-controls="c-s-8">
+        <span class="massage-head">
+          <span class="massage-title">Manuální <b>lymfatická masáž</b></span>
+          <span class="massage-price">60 min 1 000 Kč / 90 min 1 300 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-s-8" class="accordion-collapse collapse" aria-labelledby="h-s-8" data-bs-parent="#acc-s-1">
+      <div class="accordion-body">
+        <p>Manuální lymfatická masáž je speciální jemná hmatová technika, která podporuje přirozené pročištění tkání, urychluje tok lymfy v těle a zmírňuje otoky. Náš lymfatický systém bývá často přetížený sedavým zaměstnáním, dlouhým stáním, nedostatkem pohybu, ale i nevhodnou stravou či těsným oblečením. Když se tok lymfy zpomalí, tělo začne zadržovat vodu, dostavuje se únava, oslabení imunity, otoky nohou nebo celulitida. V Blahodárné péči se můžete těšit na zcela odlišný zážitek než u klasické masáže. Manuální lymfatická masáž je velmi pomalá, jemná až hladivá a mimořádně příjemná procedura, při které si dokonale odpočinete.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 class="offer-group">Relaxační masáže</h3>
+<div class="accordion accordion-flush massage-list" id="acc-s-2">
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-s-9">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-s-9" aria-expanded="false" aria-controls="c-s-9">
+        <span class="massage-head">
+          <span class="massage-title">Uvolňující masáž <b>zad a šíje</b></span>
+          <span class="massage-price">30 min 500 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-s-9" class="accordion-collapse collapse" aria-labelledby="h-s-9" data-bs-parent="#acc-s-2">
+      <div class="accordion-body">
+        <p>Ideální volba pro rychlou, ale hlubokou úlevu během náročného dne. Tato půlhodinová procedura se plně soustředí na nejvíce přetížené partie horní poloviny těla, kde se nejčastěji ukládá stres a únava z dlouhého sezení. Cílenými hmaty rozpouští svalové uzlíky v oblasti zad, trapézů a krční páteře, ulevuje od ztuhlosti a navrací tělu příjemnou lehkost. Během pouhých 30 minut odplaví nahromaděné napětí a zanechá vaši mysl svěží a odpočatou.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-s-10">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-s-10" aria-expanded="false" aria-controls="c-s-10">
+        <span class="massage-head">
+          <span class="massage-title"><b>Čokoládový masážní rituál</b></span>
+          <span class="massage-price">75 min 1 300 Kč / 100 min 1 800 Kč / 150 min 2 500 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-s-10" class="accordion-collapse collapse" aria-labelledby="h-s-10" data-bs-parent="#acc-s-2">
+      <div class="accordion-body">
+        <p>Vychutnejte si doslova čokoládový sen! Tento jedinečný rituál plný vůně čokolády, relaxace a hýčkání propojuje pečující ošetření pokožky, příjemné teplo, aromaterapii a cenné látky obsažené v pravém kakau. To je bohaté na antioxidanty a minerály, které chrání buňky před stárnutím, podporují elasticitu kůže a pomáhají zjemňovat projevy celulitidy.</p><p>Procedura kombinuje uvolňující masáž mandlovým olejem, jemný tělový peeling a následnou masáž teplou čokoládou, jejíž podmanivá vůně okamžitě zlepší náladu a navodí pocit hlubokého bezpečí. Rituál pokračuje 10 až 30 minutovým čokoládovým zábalem, během kterého si naplno užijete chvíle klidu a necháte na sebe působit hřejivé teplo. Závěrečná sprcha odstraní zbytky čokolády a zanechá pokožku sametově hebkou. Po domluvě lze sprchu vynechat a čokoládu pouze jemně setřít teplým ručníkem.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-s-11">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-s-11" aria-expanded="false" aria-controls="c-s-11">
+        <span class="massage-head">
+          <span class="massage-title">Relaxační <b>Blahodárná masáž</b> s lávovými kameny</span>
+          <span class="massage-price">90 min 1 500 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-s-11" class="accordion-collapse collapse" aria-labelledby="h-s-11" data-bs-parent="#acc-s-2">
+      <div class="accordion-body">
+        <p>Užijte si vědomý, láskyplný dotek, který je jednou z nejpřirozenějších cest k uzdravení těla i duše. Vědomé doteky v nás probouzejí pocit bezpečí, posilují imunitu, harmonizují energetické dráhy v těle a odplavují nahromaděný stres. Relaxační masáž v Blahodárné péči je citlivou kombinací rozmanitých masážních technik, které vždy přizpůsobujeme vašim aktuálním přáním a potřebám. Během ošetření citlivě propojujeme různé hloubky tlaku a plynulých pohybů s hřejivými lávovými kameny. Výsledkem je hluboké uvolnění svalů, zlepšení nálady a navození vnitřního klidu.</p><p>Před začátkem masáže si intuitivně zvolíte kartu s mandalou, jež v sobě nese poselství konkrétní byliny a její vůně. Podle vašeho výběru vám přímo na míru připravíme směs esenciálního a základního oleje, jejíž aroma pak během masáže dokonale zharmonizuje vaše tělo i mysl.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+</div>
+                    <div class="text-center pt-4">
+                        <a class="btn btn-secondary" href="#o-stepance">O mně</a>
+                    </div>
+                </div>
+
+                <!-- Lenka -->
+                <div class="col-lg-6 offer-col" id="nabidka-lenka">
+                    <h2 class="offer-name">Lenka Štěpánková</h2>
+                    <h3 class="offer-group">Ájurvédské masáže</h3>
+<div class="accordion accordion-flush massage-list" id="acc-l-0">
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-l-1">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-l-1" aria-expanded="false" aria-controls="c-l-1">
+        <span class="massage-head">
+          <span class="massage-title"><b>Ájurvédská masáž</b> zad, rukou, šíje a hlavy</span>
+          <span class="massage-price">60 min 1 000 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-l-1" class="accordion-collapse collapse" aria-labelledby="h-l-1" data-bs-parent="#acc-l-0">
+      <div class="accordion-body">
+        <p>Dopřejte úlevu partiím, které během dne nesou největší tíhu stresu a únavy. Tato komplexní ájurvédská procedura propojuje uvolňující masáž zad a šíje s jemnou péčí o přetížené ruce a hlavu. Pomocí teplých bylinných olejů a cílených tahů rozpouští hluboké svalové napětí, ulevuje od bolestí hlavy i ztuhlých paží a harmonizuje tok životní energie. Výsledkem je okamžitý pocit lehkosti v horní polovině těla, zklidnění roztěkané mysli a hluboká regenerace celého organismu.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-l-2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-l-2" aria-expanded="false" aria-controls="c-l-2">
+        <span class="massage-head">
+          <span class="massage-title">Ájurvédská olejová masáž <b>Abhyanga</b></span>
+          <span class="massage-price">60 min 1 000 Kč / 90 min 1 500 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-l-2" class="accordion-collapse collapse" aria-labelledby="h-l-2" data-bs-parent="#acc-l-0">
+      <div class="accordion-body">
+        <p>Abhyanga masáž je tradiční rituál péče o tělo, který vychází z tisícileté indické tradice. Masáž probíhá pomocí speciálních teplých bylinných olejů, které pečlivě vybíráme přesně podle vaší aktuální fyzické i psychické konstituce (dóši). Hluboké a plynulé tahy harmonizují celý organismus a odplavují nahromaděný stres. V Blahodárné péči rituál zahajujeme prohřátím těla teplými ručníky, díky čemuž se pokožka uvolní a léčivé bylinné oleje proniknou mnohem hlouběji do tkání. Pro maximální účinek doporučujeme nechat oleje působit ještě 30 až 60 minut po masáži a poté si doma dopřát horkou sprchu či koupel.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-l-3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-l-3" aria-expanded="false" aria-controls="c-l-3">
+        <span class="massage-head">
+          <span class="massage-title"><b>Ájurvédská masáž</b> s bylinným peelingem</span>
+          <span class="massage-price">90 min 1 600 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-l-3" class="accordion-collapse collapse" aria-labelledby="h-l-3" data-bs-parent="#acc-l-0">
+      <div class="accordion-body">
+        <p>Hloubková očista, hebkost a nová energie. V Blahodárné péči tuto proceduru spojuji s olejovou masáží Abhyanga, při které využívám výživný olej a byliny odpovídající konstituci vašeho těla (dóši). Dlouhé masážní tahy odstraňují odumřelé buňky, čistí póry do hloubky a podporují přirozenou regeneraci a obnovu pokožky. Peeling je skvělou celoroční péčí – před létem pokožku dokonale připraví na rovnoměrné opálení a v létě ji zase hloubkově vyživí a promastí po slunění. Pro maximální účinek doporučuji proceduru spojit s prohřátím v bylinném parním boxu (Swedana). Po této masáži vás čeká teplá sprcha a pocit lehkosti.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 class="offer-group">Relaxační masáže</h3>
+<div class="accordion accordion-flush massage-list" id="acc-l-1">
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-l-4">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-l-4" aria-expanded="false" aria-controls="c-l-4">
+        <span class="massage-head">
+          <span class="massage-title">Relaxační <b>Blahodárná masáž</b> s lávovými kameny</span>
+          <span class="massage-price">60 min 1 000 Kč / 90 min 1 500 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-l-4" class="accordion-collapse collapse" aria-labelledby="h-l-4" data-bs-parent="#acc-l-1">
+      <div class="accordion-body">
+        <p>Užijte si vědomý, láskyplný dotek, který je jednou z nejpřirozenějších cest k uzdravení těla i duše. Vědomé doteky v nás probouzejí pocit bezpečí, posilují imunitu, harmonizují energetické dráhy v těle a odplavují nahromaděný stres. Relaxační masáž v Blahodárné péči je citlivou kombinací rozmanitých masážních technik, které vždy přizpůsobujeme vašim aktuálním přáním a potřebám. Během ošetření citlivě propojujeme různé hloubky tlaku a plynulých pohybů s hřejivými lávovými kameny. Výsledkem je hluboké uvolnění svalů, zlepšení nálady a navození vnitřního klidu.</p><p>Před začátkem masáže si intuitivně zvolíte kartu s mandalou, jež v sobě nese poselství konkrétní byliny a její vůně. Podle vašeho výběru vám přímo na míru připravíme směs esenciálního a základního oleje, jejíž aroma pak během masáže dokonale zharmonizuje vaše tělo i mysl.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-l-5">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-l-5" aria-expanded="false" aria-controls="c-l-5">
+        <span class="massage-head">
+          <span class="massage-title"><b>Čokoládová masáž</b>, peeling, zábal</span>
+          <span class="massage-price">100 min 1 800 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-l-5" class="accordion-collapse collapse" aria-labelledby="h-l-5" data-bs-parent="#acc-l-1">
+      <div class="accordion-body">
+        <p>Dopřejte si dokonalou harmonii smyslů a hloubkovou výživu pokožky v jednom luxusním rituálu. V Blahodárné péči tuto sladkou proceduru zahajuji jemným kokosovým peelingem, který šetrně odstraní odumřelé buňky a zanechá pokožku dokonale připravenou na další péči. Následuje uvolňující masáž spojující hebký mandlový olej a bohatý čokoládový masážní krém. Vůně kakaa a kokosu okamžitě odplaví stres, zlepší náladu a navodí pocit hlubokého bezpečí. Celý zážitek završí hřejivý zábal, během kterého se všechny vyživující látky vstřebají do hloubky a zanechají vaši pokožku sametově hebkou, pružnou a provoněnou.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 class="offer-group">Lymfatické masáže</h3>
+<div class="accordion accordion-flush massage-list" id="acc-l-2">
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-l-6">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-l-6" aria-expanded="false" aria-controls="c-l-6">
+        <span class="massage-head">
+          <span class="massage-title">Manuální <b>lymfatická masáž</b></span>
+          <span class="massage-price">60 min 1 000 Kč / 90 min 1 300 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-l-6" class="accordion-collapse collapse" aria-labelledby="h-l-6" data-bs-parent="#acc-l-2">
+      <div class="accordion-body">
+        <p>Manuální lymfatická masáž je speciální jemná hmatová technika, která podporuje přirozené pročištění tkání, urychluje tok lymfy v těle a zmírňuje otoky. Náš lymfatický systém bývá často přetížený sedavým zaměstnáním, dlouhým stáním, nedostatkem pohybu, ale i nevhodnou stravou či těsným oblečením. Když se tok lymfy zpomalí, tělo začne zadržovat vodu, dostavuje se únava, oslabení imunity, otoky nohou nebo celulitida. V Blahodárné péči se můžete těšit na zcela odlišný zážitek než u klasické masáže. Manuální lymfatická masáž je velmi pomalá, jemná až hladivá a mimořádně příjemná procedura, při které si dokonale odpočinete.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 class="offer-group">Head Spa</h3>
+<div class="accordion accordion-flush massage-list" id="acc-l-3">
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-l-7">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-l-7" aria-expanded="false" aria-controls="c-l-7">
+        <span class="massage-head">
+          <span class="massage-title"><b>Head Spa</b> s vůní Cejlonu</span>
+          <span class="massage-price">75 min 1 300 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-l-7" class="accordion-collapse collapse" aria-labelledby="h-l-7" data-bs-parent="#acc-l-3">
+      <div class="accordion-body">
+        <p>Nechte se unést na vlnách exotických dálek a dopřejte své hlavě i mysli hlubokou regeneraci. Během procedury vás čeká jemný peeling a hloubkové čištění pokožky hlavy, uvolňující masáž vlasové části, šíje, ramen a dekoltu, vyživující vlasová maska i uklidňující vodní lázeň. Teplé bylinné oleje a kořenitě sladká vůně Cejlonu okamžitě odplaví nahromaděný stres, uleví od bolestí hlavy a navodí pocit naprostého klidu. Vaše vlasy zůstanou lesklé, vyživené a plné života.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-l-8">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-l-8" aria-expanded="false" aria-controls="c-l-8">
+        <span class="massage-head">
+          <span class="massage-title"><b>Šiva Head Spa</b> pro muže</span>
+          <span class="massage-price">90 min 1 600 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-l-8" class="accordion-collapse collapse" aria-labelledby="h-l-8" data-bs-parent="#acc-l-3">
+      <div class="accordion-body">
+        <p>Hluboký restart těla i mysli s péčí vytvořenou speciálně pro muže. V Blahodárné péči tento 90minutový rituál provádíme s luxusní ájurvédskou kosmetikou Spa Ceylon z pánské řady. Procedura začíná 60minutovým rituálem Head Spa, který důkladně pročistí a vyživí pokožku hlavy, podpoří zdravý růst vlasů a odplaví každodenní napětí. Součástí péče je uvolňující masáž hlavy, obličeje, šíje a trapézů, revitalizační obličejová maska, uklidňující vlasová bylinná lázeň a šetrné vysušení vlasů (bez stylingu). Na závěr vás čeká 30minutová cílená masáž zad, která povolí ztuhlé svaly a navodí pocit naprosté lehkosti a nové energie.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-l-9">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-l-9" aria-expanded="false" aria-controls="c-l-9">
+        <span class="massage-head">
+          <span class="massage-title"><b>Head Spa</b> s lymfatickou masáží rukou a nohou</span>
+          <span class="massage-price">120 min 1 900 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-l-9" class="accordion-collapse collapse" aria-labelledby="h-l-9" data-bs-parent="#acc-l-3">
+      <div class="accordion-body">
+        <p>Dopřejte si výjimečný rituál celkové obnovy, který propojuje hloubkovou regeneraci vlasů s lehkostí celého těla. V Blahodárné péči začínáme rituálem Head Spa, během kterého uvolníme napětí masáží obličeje, hlavy, šíje a trapézů. Vaší pokožce hlavy i vlasům dopřejeme intenzivní výživu, regenerační masku a uklidňující vlasovou bylinnou lázeň, po které následuje šetrné vysušení vlasů (bez finálního stylingu).</p><p>Po péči o hlavu plynule navazuje jemná lymfatická masáž rukou a nohou. Ta podpoří přirozenou očistu organismu, odplaví přebytečnou vodu a zbaví vás pocitu těžkých končetin. Z salonu budete odcházet odpočatá od hlavy až k patě.</p><p>Délka procedury: 110 minut (70 min Head Spa + 40 min lymfatická masáž).</p><p>Poznámka: U dlouhých vlasů účtujeme příplatek 100–200&nbsp;Kč dle jejich délky a hustoty.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 class="offer-group">Maderoterapie</h3>
+<div class="accordion accordion-flush massage-list" id="acc-l-4">
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-l-10">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-l-10" aria-expanded="false" aria-controls="c-l-10">
+        <span class="massage-head">
+          <span class="massage-title"><b>Maderoterapie</b></span>
+          <span class="massage-price">60 min 1 000 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-l-10" class="accordion-collapse collapse" aria-labelledby="h-l-10" data-bs-parent="#acc-l-4">
+      <div class="accordion-body">
+        <p>Při maderoterapii využívám anatomicky tvarované dřevěné válečky a nástroje. Tuto proceduru provádím s citem a respektem k vašemu tělu. Masáž odplavuje přebytečnou vodu i toxiny, účinně vyhlazuje projevy celulitidy, zpevňuje kontury postavy a zbavuje vás pocitu těžkých nohou. Zároveň příjemně prohřívá a uvolňuje ztuhlé svaly, takže odcházíte nejen s vyhlazenou pokožkou, ale i dokonale odpočatá.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+</div>
+                    <div class="text-center pt-4">
+                        <a class="btn btn-secondary" href="#o-lence">O mně</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ CITÁT (mezi nabídkou a představením) ============ -->
+    <section class="content-small">
+        <div class="container">
+            <div class="row motto-div">
+                <p class="text-secondary motto-text">„Naše planeta nepotřebuje víc úspěšných lidí. Zoufale potřebuje ty,
+                    kteří tvoří mír, léčí, obnovují, vyprávějí příběhy a&nbsp;milují vše živé.“</p>
+                <p class="text-secondary text-right motto-text">– Dalajláma</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ 4) PŘEDSTAVENÍ + FOTO ============ -->
+    <section class="about py-5" id="o-nas">
+        <div class="container">
+            <h1 class="text-center pb-4">Seznamte se</h1>
+            <div class="row g-5">
+
+                <!-- Štěpánka -->
+                <div class="col-lg-6" id="o-stepance">
+                    <h2 class="pt-3">Štěpánka Kee</h2>
+                    <p class="pt-2 justify">Vítejte v&nbsp;Blahodárné péči. S&nbsp;radostí se s&nbsp;vámi podělím o&nbsp;to, co miluji – o&nbsp;kouzlo ájurvédských a&nbsp;relaxačních masáží.</p>
+                    <p class="justify">Otevření vlastního salonu pro mě bylo splněním dlouholetého snu. Cítím obrovskou vděčnost za všechny přátele, které mi život přivedl do cesty a&nbsp;kteří mi otevřeli dveře k&nbsp;východním naukám a&nbsp;léčivému doteku.</p>
+                    <p class="justify">Můj příběh s&nbsp;ájurvédou začal v&nbsp;roce 2013. Tehdy jsem pod vedením duchovního učitele z&nbsp;Indie dostala obrovský dar – zasvěcení do síly masáží a&nbsp;hluboké moudrosti Indie. Tato zkušenost mi doslova změnila život a&nbsp;dodnes z&nbsp;ní stále čerpám. Všechno, co jsem se tehdy naučila, teď s&nbsp;láskou, pokorou a&nbsp;velkým vděkem předávám dál prostřednictvím masáží.</p>
+                    <p class="justify">V&nbsp;roce 2024 mi osud do cesty přivedl také Lenku, která se zanedlouho stala mou kolegyní a&nbsp;kamarádkou. Od začátku jsme cítily, že se dokonale doplňujeme – ona jako vzdušný Blíženec a&nbsp;ájurvédská Váta, já jako ohnivý Beran a&nbsp;Pitta. Navzájem se podporujeme přesně tak, jako oheň a&nbsp;vzduch. Naše spojení tak v&nbsp;salonu vytváří pozitivní alchymii, podporující energii, blahodárnou péči a&nbsp;vzájemné porozumění.</p>
+                    <p class="justify">Každý člověk je pro mě jedinečný. Věřím, že naše tělo a&nbsp;duše jsou spojené nádoby. Proto ke každému z&nbsp;vás přistupuji celostně, s&nbsp;respektem a&nbsp;snahou ulevit nejen ztuhlým svalům, ale i&nbsp;unavené mysli.</p>
+                    <p class="justify">Pořád se učím. Skrze vzestupy i&nbsp;pády, ze všeho, co mi život přináší. Být dobrým a&nbsp;vnímavým člověkem je pro mě to nejdůležitější. A&nbsp;VY jste na mé životní cestě mou největší inspirací…</p>
+                    <p>Namasté</p>
+                    <p class="text-secondary">Štěpánka</p>
+                    <p><a href="#" data-bs-toggle="modal" data-bs-target="#o-mne">Absolvované kurzy a&nbsp;vzdělání</a></p>
+
                     <div class="modal fade bd-example-modal-lg" id="o-mne" tabindex="-1" role="dialog"
-                        aria-labelledby="O mně" aria-hidden="true">
+                        aria-labelledby="o-mne-title" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h2 class="modal-title" id="Title">Absolvované <b>rekvalifikační a&nbsp;odborné
-                                            kurzy</b> 2013&nbsp;-&nbsp;2023:
-                                    </h2>
+                                    <h2 class="modal-title" id="o-mne-title">Absolvované <b>rekvalifikační
+                                            a&nbsp;odborné kurzy</b> 2013&nbsp;-&nbsp;2023:</h2>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body row">
-
-                                    <div class="col-lg-12">
-
-                                        <ul>
-                                            <li>Ajurvédská Abhyanga masáž</li>
-                                            <li>Ajurvédská Pada Abhyanga masáž</li>
-                                            <li>Ajurvédská anti-celulitidní Garshan masáž</li>
-                                            <li>Ajurvédská masáž bylinnými měšci</li>
-                                            <li>Aroma holistická masáž</li>
-                                            <li>Aura Soma masáž</li>
-                                            <li>Indická masáž hlavy Champi</li>
-                                            <li>Manuální lymfatická masáž těla</li>
-                                            <li>Masér pro sportovní a rekondiční masáže mimo oblast zdravotnictví </li>
-                                            <li>Usui Shiki Ryoho Reiki - I. stupeň </li>
-                                            <li>Usui Shiki Ryoho Reiki - II. stupeň </li>
-                                            <li>Zhong Yuan Qigong I. stupeň </li>
-                                        </ul>
-                                    </div>
+                                <div class="modal-body">
+                                    <ul>
+                                        <li>Ajurvédská Abhyanga masáž</li>
+                                        <li>Ajurvédská Pada Abhyanga masáž</li>
+                                        <li>Ajurvédská anti-celulitidní Garshan masáž</li>
+                                        <li>Ajurvédská masáž bylinnými měšci</li>
+                                        <li>Aroma holistická masáž</li>
+                                        <li>Aura Soma masáž</li>
+                                        <li>Indická masáž hlavy Champi</li>
+                                        <li>Manuální lymfatická masáž těla</li>
+                                        <li>Masér pro sportovní a rekondiční masáže mimo oblast zdravotnictví</li>
+                                        <li>Usui Shiki Ryoho Reiki - I. stupeň</li>
+                                        <li>Usui Shiki Ryoho Reiki - II. stupeň</li>
+                                        <li>Zhong Yuan Qigong I. stupeň</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <p>Namasté,</p>
-
-                    <p class="text-secondary">Štěpánka Kee</p>
                 </div>
-                <div class="col-lg-5">
+
+                <!-- Lenka -->
+                <div class="col-lg-6" id="o-lence">
+                    <h2 class="pt-3">Lenka Štěpánková</h2>
+                    <p class="pt-2 justify">Vítejte v&nbsp;prostoru Blahodárné péče, kde můžete na chvíli zpomalit, vydechnout a&nbsp;nechat starosti za dveřmi.</p>
+                    <p class="justify">Masáže, péče o&nbsp;tělo i&nbsp;duši a&nbsp;objevování toho, co se skrývá „za oponou“ běžného světa, mě přitahovaly odjakživa. Mnoho let jsem pracovala v&nbsp;běžném zaměstnání, ale čím dál více jsem cítila, že mi v&nbsp;něm něco chybí a&nbsp;že mě mé srdce táhne jinam.</p>
+                    <p class="justify">Všechno se vyjasnilo ve chvíli, kdy jsem se náhodou objednala na masáž ke Štěpánce. Hned od první chvíle jsme věděly, že jsme na stejné vlně a&nbsp;lidsky si rozumíme. Naše setkání bylo posledním postrčením, které jsem potřebovala. Po pár měsících jsem opustila starou práci a&nbsp;rozhodla se jít za tím, co mi dává v&nbsp;životě skutečný smysl – pomáhat lidem.</p>
+                    <p class="justify">Od roku 2024 tak se Štěpánkou tvoříme tým v&nbsp;Blahodárné péči. Když se dnes ohlédnu zpět, vím, že to bylo jedno z&nbsp;nejlepších rozhodnutí mého života. Mám obrovské štěstí a&nbsp;cítím vděčnost, že moje práce je zároveň mým posláním.</p>
+                    <p class="justify">Mým přáním je, abyste ode mě odcházeli nejen s&nbsp;uvolněným tělem, ale i&nbsp;s&nbsp;lehčí hlavou a&nbsp;novou chutí do života.</p>
+                    <p class="justify">Moc se těším, až se potkáme 💞.</p>
+                    <p class="text-secondary">Lenka</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ FOTKY SALONU ============ -->
+    <section class="salon pb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
                     <div id="carousel-photos-0" class="carousel slide" data-bs-ride="true">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carousel-photos-0" data-bs-slide-to="0"
@@ -190,29 +675,28 @@
                                 aria-label="Slide 6"></button>
                             <button type="button" data-bs-target="#carousel-photos-0" data-bs-slide-to="6"
                                 aria-label="Slide 7"></button>
-
                         </div>
                         <div class="carousel-inner rounded">
                             <div class="carousel-item active">
-                                <img src="assets/img/interier/KOCH2534.jpg" class="d-block w-100" alt="">
+                                <img src="assets/img/interier/KOCH2534.jpg" class="d-block w-100" alt="Interiér salonu">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/interier/KOCH2509.jpg" class="d-block w-100" alt="">
+                                <img src="assets/img/interier/KOCH2509.jpg" class="d-block w-100" alt="Interiér salonu">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/interier/KOCH2476.jpg" class="d-block w-100" alt="">
+                                <img src="assets/img/interier/KOCH2476.jpg" class="d-block w-100" alt="Interiér salonu">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/interier/KOCH2566.jpg" class="d-block w-100" alt="">
+                                <img src="assets/img/interier/KOCH2566.jpg" class="d-block w-100" alt="Interiér salonu">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/interier/KOCH2572.jpg" class="d-block w-100" alt="">
+                                <img src="assets/img/interier/KOCH2572.jpg" class="d-block w-100" alt="Interiér salonu">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/interier/KOCH2411.jpg" class="d-block w-100" alt="">
+                                <img src="assets/img/interier/KOCH2411.jpg" class="d-block w-100" alt="Interiér salonu">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/interier/KOCH2564.jpg" class="d-block w-100" alt="">
+                                <img src="assets/img/interier/KOCH2564.jpg" class="d-block w-100" alt="Interiér salonu">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carousel-photos-0"
@@ -231,6 +715,41 @@
         </div>
     </section>
 
+
+    <!-- ============ RECENZE ============ -->
+    <section class="reviews py-5" id="recenze">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1>Recenze</h1>
+                    <p class="pt-2">Vaše zpětná vazba nás těší a pomáhá ostatním vybrat si správnou péči.</p>
+                </div>
+            </div>
+
+            <!-- DOPLNIT: sem vložte skutečné recenze z Googlu (vzor níže, odkomentovat a upravit).
+                 Každá recenze = jeden blok <div class="col-md-6 col-lg-4">...</div>
+            <div class="row g-4 py-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <figure class="review-card">
+                        <div class="review-stars" role="img" aria-label="5 z 5 hvězdiček">★★★★★</div>
+                        <blockquote><p>Text recenze…</p></blockquote>
+                        <figcaption>Jméno klientky, recenze na Googlu</figcaption>
+                    </figure>
+                </div>
+            </div>
+            -->
+
+            <div class="text-center pt-4">
+                                <a class="btn btn-primary m-2" target="_blank" rel="noopener"
+                    href="https://search.google.com/local/writereview?placeid=ChIJcyM20p89CkcR0x_YAx1zooI">Napsat recenzi na Googlu</a>
+                <a class="btn btn-secondary m-2" target="_blank" rel="noopener"
+                    href="https://search.google.com/local/reviews?placeid=ChIJcyM20p89CkcR0x_YAx1zooI">Přečíst recenze</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ ODKAZY (beze změny) ============ -->
     <section class="linktree content-small">
         <div class="container">
             <div class="row">
@@ -258,197 +777,10 @@
             </div>
         </div>
     </section>
-    <section class="massages content-large text-center" id="masaze">
-        <div class="container">
-            <div class="row pt-5">
-                <h1 class="text-center">Blahodárné masáže</h1>
-
-                <!-- Navigation tabs -->
-                <ul class="nav nav-pills justify-content-center mb-4 mt-3" id="masseuseTabs" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <a class="btn btn-primary m-2" id="lenka-tab" data-bs-toggle="pill" data-bs-target="#lenka"
-                            type="button" role="tab" aria-controls="lenka" aria-selected="true">
-                            Lenka Škoulová
-                        </a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="btn btn-secondary m-2" id="stepanka-tab" data-bs-toggle="pill"
-                            data-bs-target="#stepanka" type="button" role="tab" aria-controls="stepanka"
-                            aria-selected="false">
-                            Štěpánka Kee
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="tab-content" id="masseuseTabContent">
-                    <!-- Lenka -->
-                    <div class="tab-pane fade show active" id="lenka" role="tabpanel" aria-labelledby="lenka-tab">
-
-                        <div class="massage py-3">
-                            <h2>Uvolňující masáž <b>zad</b></h2>
-                            <p>Cena: 30 min 500 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2><b>Ájurvédská masáž</b> zad, rukou, šíje a hlavy</h2>
-                            <p>Cena: 60 min 1000 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2>Ájurvédská <b>Abhyanga</b> masáž</h2>
-                            <p>Cena: 60 min 1000 Kč / 90 min 1500 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2>Ájurvédská masáž <b>Dáta Snéhan</b></h2>
-                            <p>Cena: 90 min 1200 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2>Relaxační <b>Blahodárná</b> masáž lávovými kameny</h2>
-                            <p>Cena: 90 min 1500 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2><b>Ájurvédská masáž</b> s bylinným peelingem</h2>
-                            <p>Cena: 90 min 1600 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2><b>Head Spa</b> Vůně Cejlonu</h2>
-                            <p>Cena: 75 min 1300 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2><b>Head Spa</b> s lymfatickou masáží rukou a nohou</h2>
-                            <p>Cena: 120 min 1900 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2><b>Šiva Head Spa</b> pro muže</h2>
-                            <p>Cena: 90 min 1600 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2><b>Maderoterapie</b></h2>
-                            <p>Cena: 60 min 1000 Kč</p>
-                            <hr style="width:150px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2><b>Maderoterapie</b> a zábal proti celulitidě</h2>
-                            <p>Cena: 90 min 1500 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3 pb-5">
-                            <h2>Manuální <b>lymfatická masáž</b></h2>
-                            <p>Cena: 60 min 1000 Kč / 90 min 1300 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-                    </div>
-
-                    <!-- Štěpánka -->
-                    <div class="tab-pane fade" id="stepanka" role="tabpanel" aria-labelledby="stepanka-tab">
-<!--
-                        <div class="massage py-3">
-                            <h2><b>Svedan box</b> – parní bylinná lázeň</h2>
-                            <p>Cena: 20 min 300 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
--->
-                        <div class="massage py-3">
-                            <h2>Uvolňující masáž <b>zad</b></h2>
-                            <p>Cena: 30 min 500 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2>Indická masáž hlavy <b>Champi</b></h2>
-                            <p>Cena: 45 min 750 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2><b>Ájurvédská masáž</b> zad, rukou, šíje a hlavy</h2>
-                            <p>Cena: 60 min 1000 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2>Ájurvédská <b>Abhyanga</b> masáž</h2>
-                            <p>Cena: 60 min 1000 Kč / 90 min 1500 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2>Ájurvédská masáž nohou <b>Pada Abhyanga</b> a bylinný zábal nohou</h2>
-                            <p>Cena: 75 min 1300 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2>Relaxační <b>Blahodárná masáž</b> lávovými kameny </h2>
-                            <p>Cena: 90 min 1500 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2>Ájurvédská masáž <b>bylinnými měšci</b></h2>
-                            <p>Cena: 90 min 1600 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2>Ájurvédská <b>Garshan</b> masáž a peeling</h2>
-                            <p>Cena: 90 min 1600 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2><b>Aroma holistická</b> masáž</h2>
-                            <p>Cena: 100 min 1700 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3">
-                            <h2>Masážní terapie <b>Džaráhar</b> (svedan box, masáž, zábal, peeling)</h2>
-                            <p>Cena: 120 min 2000 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-
-                        <div class="massage py-3 pb-5">
-                            <h2>Manuální <b>lymfatická masáž</b></h2>
-                            <p>Cena: 60 min 1000 Kč / 90 min 1300 Kč</p>
-                            <hr style="width:200px; margin:auto;">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="content-small">
-        <div class="container">
-            <div class="row motto-div">
-                <p class="text-secondary motto-text">„Naše planeta nepotřebuje víc úspěšných lidí. Zoufale potřebuje ty,
-                    kteří tvoří mír, léčí, obnovují, vyprávějí příběhy a&nbsp;milují vše živé.“</p>
-                <p class="text-secondary text-right motto-text">– Dalajláma</p>
-            </div>
-        </div>
-    </section>
 
 
 
+    <!-- ============ KONTAKT ============ -->
     <section class="massages content-large" id="kontakt">
         <div class="container">
             <div class="row pt-5">
@@ -460,13 +792,18 @@
                             style="height:25px; width:50px; padding-right: 20px;">
                         <a href="tel:+420777450911">+420 777 450 911</a>
                     </p>
+                    <p>Lenka Štěpánková</p>
+                    <p>
+                        <img src="./assets/icons/phone.svg" alt=""
+                            style="height:25px; width:50px; padding-right: 20px;">
+                        <a href="tel:+420723249955">+420 723 249 955</a>
+                    </p>
                     <p> <img src="./assets/icons/mail.svg" alt="" style="height:20px; width:50px; padding-right: 20px;">
                         <a href="mailto:blahodarna.pece@gmail.com">blahodarna.pece@gmail.com</a>
                     </p>
                     <p><img src="./assets/icons/place.svg" alt="" style="height:30px; width:50px; padding-right: 20px;">
                         Masarykova 636, 43801 Žatec</p>
-                    <a class="btn btn-primary" target="_blank"
-                        href="https://booking.reservanto.cz/Modal/?id=20047">Rezervace</a>
+                    <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervace</a>
                     <p class="text-secondary motto-text pt-4 text-center">Jak můžete v Blahodárné péči zaplatit?</p>
                     <div class="row text-center">
                         <div class="col-lg-6 ">
@@ -475,23 +812,17 @@
 
                         </div>
                         <div class="col-lg-6 ">
-                            <img class="contact-icon" src="./assets/icons/prevod.svg" alt="" srcset="">
-                            <p class="contact-text">PŘEVODEM</p>
+                            <i class="bi bi-qr-code contact-icon-bi" aria-hidden="true"></i>
+                            <p class="contact-text">QR KÓDEM</p>
                         </div>
-                        <!--<div class="col-lg-4 ">
-                            <img class="contact-icon" src="./assets/icons/stravenky.svg" alt="" srcset="">
-                            <p class="contact-text">STRAVENKY</p>
-                        </div>!-->
                     </div>
-
-
 
                 </div>
                 <div class="col-lg-5 py-4">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2547.1660684057724!2d13.5449245!3d50.3261529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470a3d9fd2362373%3A0x82a2731d03d81fd3!2zQmxhaG9kw6FybsOhIHDDqcSNZSAtIHJlbGF4YcSNbsOtIGEgw6FqdXJ2w6lkc2vDqSBtYXPDocW-ZQ!5e0!3m2!1scs!2scz!4v1761575451794!5m2!1scs!2scz"
                         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        referrerpolicy="no-referrer-when-downgrade" title="Mapa: Masarykova 636, Žatec"></iframe>
                 </div>
             </div>
         </div>
@@ -505,6 +836,9 @@
                         <p class="text-white">Štěpánka Kee<br>
                             <span>IČO: 07620799</span><br>
                             Fyzická osoba podnikající dle živnostenského zákona.
+                        </p>
+                        <p class="text-white">Lenka Štěpánková<br>
+                            <span>IČO: 23233443</span>
                         </p>
                         <a class="text-footer" href="./neco-navic">Něco navíc 👀</a><br>
                         <a class="text-footer" href="./kontraindikace">Kontraindikace</a><br>
