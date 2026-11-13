@@ -1,19 +1,13 @@
-/* ==========================================================
-   prodej.css – doplňkové styly pro přestavěnou úvodní stránku
-   Načítá se až PO styles.css. Barvy a písma jsou převzaté z webu:
-   hnědá #705642, zlatá #dbc87b, nadpisy Amatic SC, text Dosis.
-   ========================================================== */
 
 :root {
     --pp-brown: #705642;
-    /* hlavní hnědá (--bs-primary) */
+
     --pp-gold: #dbc87b;
-    /* zlatá z pruhů webu */
+
     --pp-gold-soft: rgba(219, 200, 123, .22);
     --pp-line: rgba(112, 86, 66, .22);
 }
 
-/* kotvy: ať nadpis nezajede těsně k hornímu okraji */
 #terapeutky,
 #masaze,
 #o-nas,
@@ -25,7 +19,7 @@
     scroll-margin-top: 1rem;
 }
 
-/* ---------- 1) Karty terapeutek ---------- */
+
 .therapist-card {
     height: 100%;
     display: flex;
@@ -69,7 +63,6 @@
 
 .therapist-tel {
     margin-top: auto;
-    /* tlačítka v obou kartách jsou vždy na stejné úrovni */
     font-size: 1.25rem;
 }
 
@@ -281,4 +274,18 @@
 .review-card figcaption {
     font-size: 1rem;
     opacity: .75;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, .25), rgba(0, 0, 0, .25)),
+        url('../assets/img/interier/KOCH2534.jpg');
+}
+
+.massage-list .accordion-body p,
+.massage-list .accordion-body li,
+.about .justify {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    overflow-wrap: break-word;
 }

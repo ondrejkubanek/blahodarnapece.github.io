@@ -8,7 +8,6 @@
 
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
-    <!-- NOVÉ: doplňkové styly pro přestavěnou úvodní stránku -->
     <link href="css/prodej.css" rel="stylesheet" />
     <meta name="author" content="Ondřej Kubánek">
     <meta name="format-detection" content="telephone=no">
@@ -121,6 +120,7 @@
                 <!-- Štěpánka -->
                 <div class="col-lg-6">
                     <article class="therapist-card">
+                        <img class="therapist-photo" src="./assets/img/stepanka.jpg" alt="Štěpánka Kee" onerror="this.style.display='none'">
                         <h2 class="therapist-name">Štěpánka Kee</h2>
                         <ul class="therapist-services">
                             <li>Ájurvédské masáže a procedury</li>
@@ -135,6 +135,7 @@
                 <!-- Lenka -->
                 <div class="col-lg-6">
                     <article class="therapist-card">
+                        <img class="therapist-photo" src="./assets/img/lenka.jpg" alt="Lenka Štěpánková" onerror="this.style.display='none'">
                         <h2 class="therapist-name">Lenka Štěpánková</h2>
                         <ul class="therapist-services">
                             <li>Ájurvédské masáže</li>
@@ -171,7 +172,6 @@
     <section class="massages-offer py-5" id="masaze">
         <div class="container">
             <h1 class="text-center pb-2">Nabídka masáží</h1>
-            <p class="text-center offer-hint">Kliknutím na masáž se zobrazí popis a odkaz na rezervaci.</p>
             <div class="row gx-4 gy-5 pt-3">
 
                 <!-- Štěpánka -->
@@ -299,41 +299,38 @@
     </div>
   </div>
 </div>
-<h3 class="offer-group">Lymfatické masáže</h3>
+<h3 class="offer-group">Relaxační masáže</h3>
 <div class="accordion accordion-flush massage-list" id="acc-s-1">
   <div class="accordion-item">
     <h4 class="accordion-header" id="h-s-8">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
         data-bs-target="#c-s-8" aria-expanded="false" aria-controls="c-s-8">
         <span class="massage-head">
-          <span class="massage-title">Manuální <b>lymfatická masáž</b></span>
-          <span class="massage-price">60 min 1 000 Kč / 90 min 1 300 Kč</span>
-        </span>
-      </button>
-    </h4>
-    <div id="c-s-8" class="accordion-collapse collapse" aria-labelledby="h-s-8" data-bs-parent="#acc-s-1">
-      <div class="accordion-body">
-        <p>Manuální lymfatická masáž je speciální jemná hmatová technika, která podporuje přirozené pročištění tkání, urychluje tok lymfy v těle a zmírňuje otoky. Náš lymfatický systém bývá často přetížený sedavým zaměstnáním, dlouhým stáním, nedostatkem pohybu, ale i nevhodnou stravou či těsným oblečením. Když se tok lymfy zpomalí, tělo začne zadržovat vodu, dostavuje se únava, oslabení imunity, otoky nohou nebo celulitida. V Blahodárné péči se můžete těšit na zcela odlišný zážitek než u klasické masáže. Manuální lymfatická masáž je velmi pomalá, jemná až hladivá a mimořádně příjemná procedura, při které si dokonale odpočinete.</p>
-        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
-      </div>
-    </div>
-  </div>
-</div>
-<h3 class="offer-group">Relaxační masáže</h3>
-<div class="accordion accordion-flush massage-list" id="acc-s-2">
-  <div class="accordion-item">
-    <h4 class="accordion-header" id="h-s-9">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#c-s-9" aria-expanded="false" aria-controls="c-s-9">
-        <span class="massage-head">
           <span class="massage-title">Uvolňující masáž <b>zad a šíje</b></span>
           <span class="massage-price">30 min 500 Kč</span>
         </span>
       </button>
     </h4>
-    <div id="c-s-9" class="accordion-collapse collapse" aria-labelledby="h-s-9" data-bs-parent="#acc-s-2">
+    <div id="c-s-8" class="accordion-collapse collapse" aria-labelledby="h-s-8" data-bs-parent="#acc-s-1">
       <div class="accordion-body">
         <p>Ideální volba pro rychlou, ale hlubokou úlevu během náročného dne. Tato půlhodinová procedura se plně soustředí na nejvíce přetížené partie horní poloviny těla, kde se nejčastěji ukládá stres a únava z dlouhého sezení. Cílenými hmaty rozpouští svalové uzlíky v oblasti zad, trapézů a krční páteře, ulevuje od ztuhlosti a navrací tělu příjemnou lehkost. Během pouhých 30 minut odplaví nahromaděné napětí a zanechá vaši mysl svěží a odpočatou.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-s-9">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-s-9" aria-expanded="false" aria-controls="c-s-9">
+        <span class="massage-head">
+          <span class="massage-title"><b>Čokoládový masážní rituál</b></span>
+          <span class="massage-price">75 min 1 300 Kč / 100 min 1 800 Kč / 150 min 2 500 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-s-9" class="accordion-collapse collapse" aria-labelledby="h-s-9" data-bs-parent="#acc-s-1">
+      <div class="accordion-body">
+        <p>Vychutnejte si doslova čokoládový sen! Tento jedinečný rituál plný vůně čokolády, relaxace a hýčkání propojuje pečující ošetření pokožky, příjemné teplo, aromaterapii a cenné látky obsažené v pravém kakau. To je bohaté na antioxidanty a minerály, které chrání buňky před stárnutím, podporují elasticitu kůže a pomáhají zjemňovat projevy celulitidy.</p><p>Procedura kombinuje uvolňující masáž mandlovým olejem, jemný tělový peeling a následnou masáž teplou čokoládou, jejíž podmanivá vůně okamžitě zlepší náladu a navodí pocit hlubokého bezpečí. Rituál pokračuje 10 až 30 minutovým čokoládovým zábalem, během kterého si naplno užijete chvíle klidu a necháte na sebe působit hřejivé teplo. Závěrečná sprcha odstraní zbytky čokolády a zanechá pokožku sametově hebkou. Po domluvě lze sprchu vynechat a čokoládu pouze jemně setřít ručníkem.</p>
         <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
       </div>
     </div>
@@ -343,31 +340,34 @@
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
         data-bs-target="#c-s-10" aria-expanded="false" aria-controls="c-s-10">
         <span class="massage-head">
-          <span class="massage-title"><b>Čokoládový masážní rituál</b></span>
-          <span class="massage-price">75 min 1 300 Kč / 100 min 1 800 Kč / 150 min 2 500 Kč</span>
-        </span>
-      </button>
-    </h4>
-    <div id="c-s-10" class="accordion-collapse collapse" aria-labelledby="h-s-10" data-bs-parent="#acc-s-2">
-      <div class="accordion-body">
-        <p>Vychutnejte si doslova čokoládový sen! Tento jedinečný rituál plný vůně čokolády, relaxace a hýčkání propojuje pečující ošetření pokožky, příjemné teplo, aromaterapii a cenné látky obsažené v pravém kakau. To je bohaté na antioxidanty a minerály, které chrání buňky před stárnutím, podporují elasticitu kůže a pomáhají zjemňovat projevy celulitidy.</p><p>Procedura kombinuje uvolňující masáž mandlovým olejem, jemný tělový peeling a následnou masáž teplou čokoládou, jejíž podmanivá vůně okamžitě zlepší náladu a navodí pocit hlubokého bezpečí. Rituál pokračuje 10 až 30 minutovým čokoládovým zábalem, během kterého si naplno užijete chvíle klidu a necháte na sebe působit hřejivé teplo. Závěrečná sprcha odstraní zbytky čokolády a zanechá pokožku sametově hebkou. Po domluvě lze sprchu vynechat a čokoládu pouze jemně setřít teplým ručníkem.</p>
-        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h4 class="accordion-header" id="h-s-11">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#c-s-11" aria-expanded="false" aria-controls="c-s-11">
-        <span class="massage-head">
           <span class="massage-title">Relaxační <b>Blahodárná masáž</b> s lávovými kameny</span>
           <span class="massage-price">90 min 1 500 Kč</span>
         </span>
       </button>
     </h4>
-    <div id="c-s-11" class="accordion-collapse collapse" aria-labelledby="h-s-11" data-bs-parent="#acc-s-2">
+    <div id="c-s-10" class="accordion-collapse collapse" aria-labelledby="h-s-10" data-bs-parent="#acc-s-1">
       <div class="accordion-body">
         <p>Užijte si vědomý, láskyplný dotek, který je jednou z nejpřirozenějších cest k uzdravení těla i duše. Vědomé doteky v nás probouzejí pocit bezpečí, posilují imunitu, harmonizují energetické dráhy v těle a odplavují nahromaděný stres. Relaxační masáž v Blahodárné péči je citlivou kombinací rozmanitých masážních technik, které vždy přizpůsobujeme vašim aktuálním přáním a potřebám. Během ošetření citlivě propojujeme různé hloubky tlaku a plynulých pohybů s hřejivými lávovými kameny. Výsledkem je hluboké uvolnění svalů, zlepšení nálady a navození vnitřního klidu.</p><p>Před začátkem masáže si intuitivně zvolíte kartu s mandalou, jež v sobě nese poselství konkrétní byliny a její vůně. Podle vašeho výběru vám přímo na míru připravíme směs esenciálního a základního oleje, jejíž aroma pak během masáže dokonale zharmonizuje vaše tělo i mysl.</p>
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 class="offer-group">Lymfatické masáže</h3>
+<div class="accordion accordion-flush massage-list" id="acc-s-2">
+  <div class="accordion-item">
+    <h4 class="accordion-header" id="h-s-11">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#c-s-11" aria-expanded="false" aria-controls="c-s-11">
+        <span class="massage-head">
+          <span class="massage-title">Manuální <b>lymfatická masáž</b></span>
+          <span class="massage-price">60 min 1 000 Kč / 90 min 1 300 Kč</span>
+        </span>
+      </button>
+    </h4>
+    <div id="c-s-11" class="accordion-collapse collapse" aria-labelledby="h-s-11" data-bs-parent="#acc-s-2">
+      <div class="accordion-body">
+        <p>Manuální lymfatická masáž je speciální jemná hmatová technika, která podporuje přirozené pročištění tkání, urychluje tok lymfy v těle a zmírňuje otoky. Náš lymfatický systém bývá často přetížený sedavým zaměstnáním, dlouhým stáním, nedostatkem pohybu, ale i nevhodnou stravou či těsným oblečením. Když se tok lymfy zpomalí, tělo začne zadržovat vodu, dostavuje se únava, oslabení imunity, otoky nohou nebo celulitida. V Blahodárné péči se můžete těšit na zcela odlišný zážitek než u klasické masáže. Manuální lymfatická masáž je velmi pomalá, jemná až hladivá a mimořádně příjemná procedura, při které si dokonale odpočinete.</p>
         <a class="btn btn-primary" target="_blank" rel="noopener" href="https://booking.reservanto.cz/Modal/?id=20047">Rezervovat</a>
       </div>
     </div>
@@ -576,7 +576,7 @@
     </section>
 
 
-    <!-- ============ CITÁT (mezi nabídkou a představením) ============ -->
+    <!-- CITÁT -->
     <section class="content-small">
         <div class="container">
             <div class="row motto-div">
@@ -587,21 +587,20 @@
         </div>
     </section>
 
-    <!-- ============ 4) PŘEDSTAVENÍ + FOTO ============ -->
+    <!-- 4) PŘEDSTAVENÍ + FOTO -->
     <section class="about py-5" id="o-nas">
         <div class="container">
-            <h1 class="text-center pb-4">Seznamte se</h1>
+            <h1 class="text-center pb-4">Naše cesty…</h1>
             <div class="row gx-4 gy-5">
 
                 <!-- Štěpánka -->
                 <div class="col-lg-6" id="o-stepance">
+                    
                     <h2 class="pt-3">Štěpánka Kee</h2>
                     <p class="pt-2 justify">Vítejte v&nbsp;Blahodárné péči. S&nbsp;radostí se s&nbsp;vámi podělím o&nbsp;to, co miluji – o&nbsp;kouzlo ájurvédských a&nbsp;relaxačních masáží.</p>
                     <p class="justify">Otevření vlastního salonu pro mě bylo splněním dlouholetého snu. Cítím obrovskou vděčnost za všechny přátele, které mi život přivedl do cesty a&nbsp;kteří mi otevřeli dveře k&nbsp;východním naukám a&nbsp;léčivému doteku.</p>
                     <p class="justify">Můj příběh s&nbsp;ájurvédou začal v&nbsp;roce 2013. Tehdy jsem pod vedením duchovního učitele z&nbsp;Indie dostala obrovský dar – zasvěcení do síly masáží a&nbsp;hluboké moudrosti Indie. Tato zkušenost mi doslova změnila život a&nbsp;dodnes z&nbsp;ní stále čerpám. Všechno, co jsem se tehdy naučila, teď s&nbsp;láskou, pokorou a&nbsp;velkým vděkem předávám dál prostřednictvím masáží.</p>
                     <p class="justify">V&nbsp;roce 2024 mi osud do cesty přivedl také Lenku, která se zanedlouho stala mou kolegyní a&nbsp;kamarádkou. Od začátku jsme cítily, že se dokonale doplňujeme – ona jako vzdušný Blíženec a&nbsp;ájurvédská Váta, já jako ohnivý Beran a&nbsp;Pitta. Navzájem se podporujeme přesně tak, jako oheň a&nbsp;vzduch. Naše spojení tak v&nbsp;salonu vytváří pozitivní alchymii, podporující energii, blahodárnou péči a&nbsp;vzájemné porozumění.</p>
-                    <p class="justify">Každý člověk je pro mě jedinečný. Věřím, že naše tělo a&nbsp;duše jsou spojené nádoby. Proto ke každému z&nbsp;vás přistupuji celostně, s&nbsp;respektem a&nbsp;snahou ulevit nejen ztuhlým svalům, ale i&nbsp;unavené mysli.</p>
-                    <p class="justify">Pořád se učím. Skrze vzestupy i&nbsp;pády, ze všeho, co mi život přináší. Být dobrým a&nbsp;vnímavým člověkem je pro mě to nejdůležitější. A&nbsp;VY jste na mé životní cestě mou největší inspirací…</p>
                     <p>Namasté</p>
                     <p class="text-secondary">Štěpánka</p>
                     <p><a href="#" data-bs-toggle="modal" data-bs-target="#o-mne">Absolvované kurzy a&nbsp;vzdělání</a></p>
@@ -639,6 +638,7 @@
 
                 <!-- Lenka -->
                 <div class="col-lg-6" id="o-lence">
+                   
                     <h2 class="pt-3">Lenka Štěpánková</h2>
                     <p class="pt-2 justify">Vítejte v&nbsp;prostoru Blahodárné péče, kde můžete na chvíli zpomalit, vydechnout a&nbsp;nechat starosti za dveřmi.</p>
                     <p class="justify">Masáže, péče o&nbsp;tělo i&nbsp;duši a&nbsp;objevování toho, co se skrývá „za oponou“ běžného světa, mě přitahovaly odjakživa. Mnoho let jsem pracovala v&nbsp;běžném zaměstnání, ale čím dál více jsem cítila, že mi v&nbsp;něm něco chybí a&nbsp;že mě mé srdce táhne jinam.</p>
@@ -654,7 +654,7 @@
     </section>
 
 
-    <!-- ============ FOTKY SALONU ============ -->
+    <!-- FOTKY SALONU -->
     <section class="salon pb-5">
         <div class="container">
             <div class="row justify-content-center">
@@ -678,7 +678,7 @@
                         </div>
                         <div class="carousel-inner rounded">
                             <div class="carousel-item active">
-                                <img src="assets/img/interier/KOCH2534.jpg" class="d-block w-100" alt="Interiér salonu">
+                                <img src="assets/img/interier/KOCH2572.jpg" class="d-block w-100" alt="Interiér salonu">
                             </div>
                             <div class="carousel-item">
                                 <img src="assets/img/interier/KOCH2509.jpg" class="d-block w-100" alt="Interiér salonu">
@@ -690,7 +690,7 @@
                                 <img src="assets/img/interier/KOCH2566.jpg" class="d-block w-100" alt="Interiér salonu">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/img/interier/KOCH2572.jpg" class="d-block w-100" alt="Interiér salonu">
+                                <img src="assets/img/interier/KOCH2534.jpg" class="d-block w-100" alt="Interiér salonu">
                             </div>
                             <div class="carousel-item">
                                 <img src="assets/img/interier/KOCH2411.jpg" class="d-block w-100" alt="Interiér salonu">
@@ -716,8 +716,8 @@
     </section>
 
 
-    <!-- ============ RECENZE ============ -->
-    <section class="reviews py-5" id="recenze">
+    <!-- RECENZE -->
+    <section class="reviews pb-5" id="recenze">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
@@ -726,18 +726,31 @@
                 </div>
             </div>
 
-            <!-- DOPLNIT: sem vložte skutečné recenze z Googlu (vzor níže, odkomentovat a upravit).
-                 Každá recenze = jeden blok <div class="col-md-6 col-lg-4">...</div>
+            
             <div class="row g-4 py-4 justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <figure class="review-card">
                         <div class="review-stars" role="img" aria-label="5 z 5 hvězdiček">★★★★★</div>
-                        <blockquote><p>Text recenze…</p></blockquote>
-                        <figcaption>Jméno klientky, recenze na Googlu</figcaption>
+                        <blockquote><p>Všem doporučuji! Opravdu blaho pro tělo i duši. Příjemné, uklidňující prostředí, které Štěpánka vytvořila. Více než profesionální přístup. Objednávám se měsíce dopředu.</p></blockquote>
+                        <figcaption>Barbora, recenze na Googlu</figcaption>
+                    </figure>
+                </div>
+                 <div class="col-md-6 col-lg-4">
+                    <figure class="review-card">
+                        <div class="review-stars" role="img" aria-label="5 z 5 hvězdiček">★★★★★</div>
+                        <blockquote><p>Štěpánka je naprosto úžasná. Po její blahodárné péči se vždy cítím blaženě, proto jsem objednána na rok dopředu 😍</p></blockquote>
+                        <figcaption>Soňa, recenze na Googlu</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <figure class="review-card">
+                        <div class="review-stars" role="img" aria-label="5 z 5 hvězdiček">★★★★★</div>
+                        <blockquote><p>Masáž od Štěpánky má opravdu blahodárné účinky. I když člověk nespí, jedna masáž vydá za 8 hodin spánku. Bonusem je krásné prostředí 🙏😌</p></blockquote>
+                        <figcaption>Eliška, recenze na Googlu</figcaption>
                     </figure>
                 </div>
             </div>
-            -->
+            
 
             <div class="text-center pt-4">
                                 <a class="btn btn-primary m-2" target="_blank" rel="noopener"
@@ -749,7 +762,7 @@
     </section>
 
 
-    <!-- ============ ODKAZY (beze změny) ============ -->
+    <!-- ODKAZY -->
     <section class="linktree content-small">
         <div class="container">
             <div class="row">
@@ -780,7 +793,7 @@
 
 
 
-    <!-- ============ KONTAKT ============ -->
+    <!-- KONTAKT -->
     <section class="massages content-large" id="kontakt">
         <div class="container">
             <div class="row pt-5">
